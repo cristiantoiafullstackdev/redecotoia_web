@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Instalación de Circuitos Eléctricos",
+    "categoryId": 1,
+    "description": "Montaje completo de cableado, tableros y protecciones para viviendas y comercios según normas vigentes."
+  },
+  {
+    "title": "Mantenimiento de Circuitos Eléctricos",
+    "categoryId": 3,
+    "description": "Revisión preventiva de tableros y cableados para evitar cortocircuitos y optimizar el consumo energético."
+  },
+  {
+    "title": "Reparación de Electrodomésticos",
+    "categoryId": 1,
+    "description": "Servicio técnico especializado en la reparación de equipos del hogar con repuestos de calidad."
+  },
+  {
+    "title": "Planificación de Proyectos Eléctricos",
+    "categoryId": 1,
+    "description": "Diseño y asesoramiento técnico para nuevas obras, asegurando una distribución eficiente de la carga."
+  },
+  {
+    "title": "Certificaciones de Instalaciones Eléctricas",
+    "categoryId": 1,
+    "description": "Emisión de certificados de aptitud eléctrica para trámites municipales, comerciales y de EPEC."
+  },
+  {
+    "title": "Instalación de Sistemas de Seguridad",
+    "categoryId": 1,
+    "description": "Montaje de cámaras, alarmas y sensores de movimiento para la protección integral de su propiedad."
+  },
+  {
+    "title": "Instalación de Sistemas de Iluminación",
+    "categoryId": 1,
+    "description": "Diseño e instalación de luminaria LED decorativa y funcional para interiores, patios y fachadas."
+  },
+  {
+    "title": "Instalación de Aires Acondicionados",
+    "categoryId": 2,
+    "description": "Instalación profesional de equipos Split y ventana con presurización y materiales normalizados."
+  },
+  {
+    "title": "Desinstalación de Aires Acondicionados",
+    "categoryId": 2,
+    "description": "Retiro técnico de unidades con recuperación de gas refrigerante para traslados o reformas."
+  },
+  {
+    "title": "Mantenimiento de Aires Acondicionados",
+    "categoryId": 3,
+    "description": "Limpieza profunda de filtros, evaporadores y condensadores para mejorar el rendimiento y la higiene."
+  },
+  {
+    "title": "Recarga de Aires Acondicionados",
+    "categoryId": 2,
+    "description": "Control de presión y recarga de gas refrigerante para asegurar el enfriamiento óptimo de su equipo."
+  }
+]
