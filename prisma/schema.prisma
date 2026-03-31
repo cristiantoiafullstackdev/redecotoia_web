@@ -1,6 +1,5 @@
 generator client {
   provider        = "prisma-client-js"
-  // previewFeatures = ["driverAdapters"]
   output          = "../app/generated/prisma"
 }
 
@@ -18,8 +17,10 @@ model Category {
 model Service {
   id          Int      @id @default(autoincrement())
   title       String
-  description String?
-  price       Float?
+  description String
+  imagePath    String 
+  price       Float
+  currency    String
   categoryId  Int
   category    Category @relation(fields: [categoryId], references: [id])
 }

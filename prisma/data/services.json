@@ -1,57 +1,89 @@
 [
   {
     "title": "Instalación de Circuitos Eléctricos",
-    "categoryId": 1,
-    "description": "Montaje completo de cableado, tableros y protecciones para viviendas y comercios según normas vigentes."
+    "description": "Montaje completo de cableado, tableros y protecciones para viviendas y comercios según normas vigentes.",
+    "imagePath": "/images/tablero-seccional.jpg",
+    "price": 150000,
+    "currency": "ARS",
+    "categoryId": 1
   },
   {
     "title": "Mantenimiento de Circuitos Eléctricos",
-    "categoryId": 3,
-    "description": "Revisión preventiva de tableros y cableados para evitar cortocircuitos y optimizar el consumo energético."
+    "description": "Revisión preventiva de tableros y cableados para evitar cortocircuitos y optimizar el consumo energético.",
+    "imagePath": "/images/mantenimiento.jpg",
+    "price": 75000,
+    "currency": "ARS",
+    "categoryId": 3
   },
   {
     "title": "Reparación de Electrodomésticos",
-    "categoryId": 1,
-    "description": "Servicio técnico especializado en la reparación de equipos del hogar con repuestos de calidad."
+    "description": "Servicio técnico especializado en la reparación de equipos del hogar con repuestos de calidad.",
+    "imagePath": "/images/reparacion.jpg",
+    "price": 100000,
+    "currency": "ARS",
+    "categoryId": 1
   },
   {
     "title": "Planificación de Proyectos Eléctricos",
-    "categoryId": 1,
-    "description": "Diseño y asesoramiento técnico para nuevas obras, asegurando una distribución eficiente de la carga."
+    "description": "Diseño y asesoramiento técnico para nuevas obras, asegurando una distribución eficiente de la carga.",
+    "imagePath": "/images/proyecto-electrico.jpg",
+    "price": 200000,
+    "currency": "ARS",
+    "categoryId": 1
   },
   {
     "title": "Certificaciones de Instalaciones Eléctricas",
-    "categoryId": 1,
-    "description": "Emisión de certificados de aptitud eléctrica para trámites municipales, comerciales y de EPEC."
+    "description": "Emisión de certificados de aptitud eléctrica para trámites municipales, comerciales y de EPEC.",
+    "imagePath": "/images/certificacion.jpg",
+    "price": 300000,
+    "currency": "ARS",
+    "categoryId": 1
   },
   {
     "title": "Instalación de Sistemas de Seguridad",
-    "categoryId": 1,
-    "description": "Montaje de cámaras, alarmas y sensores de movimiento para la protección integral de su propiedad."
+    "description": "Montaje de cámaras, alarmas y sensores de movimiento para la protección integral de su propiedad.",
+    "imagePath": "/images/seguridad.jpg",
+    "price": 80000,
+    "categoryId": 1
   },
   {
     "title": "Instalación de Sistemas de Iluminación",
-    "categoryId": 1,
-    "description": "Diseño e instalación de luminaria LED decorativa y funcional para interiores, patios y fachadas."
+    "description": "Diseño e instalación de luminaria LED decorativa y funcional para interiores, patios y fachadas.",
+    "imagePath": "/images/iluminacion-exterior.jpg",
+    "price": 50000,
+    "currency": "ARS",
+    "categoryId": 1
   },
   {
     "title": "Instalación de Aires Acondicionados",
-    "categoryId": 2,
-    "description": "Instalación profesional de equipos Split y ventana con presurización y materiales normalizados."
+    "description": "Instalación profesional de equipos Split y ventana con presurización y materiales normalizados.",
+    "imagePath": "/images/aire-vacio-arriba.jpg",
+    "price": 150000,
+    "currency": "ARS",
+    "categoryId": 2
   },
   {
     "title": "Desinstalación de Aires Acondicionados",
-    "categoryId": 2,
-    "description": "Retiro técnico de unidades con recuperación de gas refrigerante para traslados o reformas."
+    "description": "Retiro técnico de unidades con recuperación de gas refrigerante para traslados o reformas.",
+    "imagePath": "/images/aire-vacio.jpg",
+    "price": 75000,
+    "currency": "ARS",
+    "categoryId": 2
   },
   {
     "title": "Mantenimiento de Aires Acondicionados",
-    "categoryId": 3,
-    "description": "Limpieza profunda de filtros, evaporadores y condensadores para mejorar el rendimiento y la higiene."
+    "description": "Limpieza profunda de filtros, evaporadores y condensadores para mejorar el rendimiento y la higiene.",
+    "imagePath": "/images/aire-mantenimiento.jpg",
+    "price": 75000,
+    "currency": "ARS",
+    "categoryId": 3
   },
   {
     "title": "Recarga de Aires Acondicionados",
-    "categoryId": 2,
-    "description": "Control de presión y recarga de gas refrigerante para asegurar el enfriamiento óptimo de su equipo."
+    "description": "Control de presión y recarga de gas refrigerante para asegurar el enfriamiento óptimo de su equipo.",
+    "imagePath": "/images/aire-vacio.jpg",
+    "price": 75000,
+    "currency": "ARS",
+    "categoryId": 2    
   }
 ]

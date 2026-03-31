@@ -23,7 +23,7 @@ export default function Hero() {
             href="https://wa.me/5493515930609"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative inline-block bg-[#F6B426] text-[#3A3C40] font-bold py-2 px-10 rounded-md overflow-hidden"
+            className="relative inline-block bg-[#F6B426] text-[#3A3C40] font-bold py-2 px-10 overflow-hidden"
           >
             <span className="relative z-10">Hablemos</span>
             <span className="absolute bottom-0 right-0 w-8 h-8 bg-white rounded-tl-full transition-all duration-300 ease-out group-hover:w-24 group-hover:h-24"></span>

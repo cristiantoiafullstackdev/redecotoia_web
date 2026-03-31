@@ -32,8 +32,11 @@ async function main() {
     await prisma.service.create({
       data: {
         title: svc.title,
+        description: svc.description, // Usamos la descripción del JSON
+        imagePath: svc.imagePath,     // Pasamos el path de la imagen
+        price: svc.price,             // Pasamos el precio
+        currency: svc.currency || "ARS", // Si falta en el JSON, ponemos ARS por defecto
         categoryId: svc.categoryId,
-        description: "Servicio profesional garantizado por Redeco Toia."
       },
     });
   }
