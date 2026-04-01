@@ -20,7 +20,7 @@ export default function ServicesCategoriesSection() {
         <div className="flex">
           <Image src="/icons/icon-electricidad.svg" alt="Icono de Electricidad" className="mr-6" width={50} height={50} />
             <div className="pl-4 border-l-2 border-gray-300">
-            <h3 className="text-lg font-semibold">Electricidad <br/>
+            <h3 className="text-lg font-semibold hover:text-[#F6B426]">Electricidad <br/>
             Recidencial e Inductrial</h3>
             <p className="text-sm text-gray-600">
               Instalaciones seguras, tableros <br />
@@ -33,7 +33,7 @@ export default function ServicesCategoriesSection() {
         <div className="flex">
           <Image src="/icons/icon-refrigeracion.svg" alt="Icono de Refrigeración" className="mr-6" width={50} height={50} />
           <div className="pl-4 border-l-2 border-gray-300">
-            <h3 className="text-lg font-semibold mb-2">Aire Acondicionado</h3>
+            <h3 className="text-lg font-semibold mb-2 hover:text-[#F6B426]">Aire Acondicionado</h3>
             <p className="text-sm text-gray-600">
               Instalación y mantenimiento de <br />
               sistemas de refrigeración para <br />
@@ -45,7 +45,7 @@ export default function ServicesCategoriesSection() {
         <div className="flex">
           <Image src="/icons/icon-mantenimiento.svg" alt="Icono de Mantenimiento" className="mr-6" width={50} height={50} />
           <div className="pl-4 border-l-2 border-gray-300">
-            <h3 className="text-lg font-semibold mb-2">Mantenimiento Preventivo</h3>
+            <h3 className="text-lg font-semibold mb-2 hover:text-[#F6B426]">Mantenimiento Preventivo</h3>
             <p className="text-sm text-gray-600">
               Planes mensuales para empresas<br />
               que aseguran el funcionamiento<br />
