@@ -1,5 +1,41 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image"
+
+interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  serviceType: string;
+  message: string;
+}
+
 export default function Contacto() {
+
+  const [form, setForm] = useState<ContactFormData>({
+      name: "",
+      email: "",
+      phone: "",
+      serviceType: "",
+      message: ""
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const res = await fetch("/api/route-contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+    const data = await res.json();
+    if (data.success) {
+      alert("Mensaje enviado correctamente");
+    } else {
+      alert("Error al enviar el mensaje");
+    }
+  };
+
+
   return (
     <section id="contacto" className="px-54 py-12">
       <div className="w-full p-12 bg-[#091242] text-center">
@@ -53,35 +89,73 @@ export default function Contacto() {
           </a>
         </div>
 
-        <form action="mailto:toiacristiandaniel@gmail.com" method="post" encType="text/plain" className="mt-8">
+        <form  onSubmit={handleSubmit} className="mt-8">
           <div className="grid grid-cols-2 text-white gap-4">
             <div>
-              <input type="text" id="nombre" placeholder="Nombre Completo" className="w-full p-2 text-white border border-white" />
+              <input 
+                type="text" 
+                id="nombre" 
+                placeholder="Nombre Completo" 
+                className="w-full p-2 text-white border border-white"
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })} 
+              />
             </div>
             <div>
-              <input type="email" id="email" placeholder="Email" className="w-full p-2 text-white border border-white" />
+              <input 
+                type="email" 
+                id="email" 
+                placeholder="Email" 
+                className="w-full p-2 text-white border border-white"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })} 
+              />
             </div>
-              <div>
-              <input type="text" id="telefono" placeholder="Teléfono" className="w-full p-2 text-white border border-white" />
+            <div>
+              <input 
+                type="text" 
+                id="phone" 
+                placeholder="Teléfono" 
+                className="w-full p-2 text-white border border-white"
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })} 
+              />
             </div>
-          <div>
-            <input type="email" id="servicio" placeholder="Tipo de Servicio" className="w-full p-2 text-white border border-white" />
+            <select
+              id="serviceType"
+              name="serviceType"
+              required
+              aria-label="Tipo de servicio"
+              value={form.serviceType} // Cambiado de formData a form
+              onChange={(e) => setForm({ ...form, serviceType: e.target.value })} // Cambiado a setForm
+              className="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none bg-white text-gray-700"
+            >
+              <option value="" disabled hidden>-- Selecciona un tipo de servicio --</option>
+              <option value="electricidad">Electricidad</option>
+              <option value="refrigeracion">Refrigeración</option>
+              <option value="mantenimientos">Mantenimientos</option>
+            </select>
           </div>
-        </div>
-        <div className="mt-4">
-          <textarea id="mensaje" placeholder="Mensaje" className="w-full p-3 text-white border border-white" rows={4} />
-        </div>
-        <div className="group inline-block mt-4">
-          <button
-            type="submit"
-            className="relative inline-block bg-[#F6B426] text-[#3A3C40] font-bold py-2 px-10 overflow-hidden"
-          >
-            <span className="relative z-10">Enviar Formulario</span>
-            <span className="absolute bottom-0 right-0 w-8 h-8 bg-white rounded-tl-full transition-all duration-300 ease-out group-hover:w-24 group-hover:h-24"></span>
-          </button>
-        </div>
+          <div className="mt-4">
+            <textarea 
+              id="mensaje" 
+              placeholder="Mensaje" 
+              className="w-full p-3 text-white border border-white" 
+              rows={4} 
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+            />
+          </div>
+          <div className="group inline-block mt-4">
+            <button
+              type="submit"
+              className="relative inline-block bg-[#F6B426] text-[#3A3C40] font-bold py-2 px-10 overflow-hidden"
+            >
+              <span className="relative z-10">Enviar Formulario</span>
+              <span className="absolute bottom-0 right-0 w-8 h-8 bg-white rounded-tl-full transition-all duration-300 ease-out group-hover:w-24 group-hover:h-24"></span>
+            </button>
+          </div>
         </form>
-
       </div> 
     </section>
   )
