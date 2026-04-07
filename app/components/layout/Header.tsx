@@ -1,16 +1,41 @@
+'use client'
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Header() {
+
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.6 } // 60% visible para marcar como activo
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <header className="w-full h-14 flex justify-between items-center px-54 bg-[rgba(9,18,66,0.5)] backdrop-blur-md">
       <nav className="text-white flex space-x-5">
-        <Link href="/" className="pr-6 border-r-2 border-white hover:text-[#F6B426]">
+        <Link href="/" className={`pr-6 border-r-2 border-white hover:text-[#F6B426] ${
+            activeSection === "" ? "text-[#F6B426]" : ""
+          }`}>
           Inicio
         </Link>
         <div className="relative group pr-6 border-r-2 border-white">
           <Link
-            href="#services"
+            href="#"
+            onClick={(e) => e.preventDefault()}
             className="hover:text-[#F6B426] flex items-center"
           >
             Servicios
@@ -45,29 +70,33 @@ export default function Header() {
             </Link>
           </div>
         </div>
-        <Link href="#about" className="pr-6 border-r-2 border-white hover:text-[#F6B426]">
+        <Link href="#about"  className={`pr-6 border-r-2 border-white hover:text-[#F6B426] ${
+            activeSection === "about" ? "text-[#F6B426]" : ""
+          }`}>
           Nosotros
         </Link>
-        <Link href="#contacto" className="pr-6 border-r-2 border-white hover:text-[#F6B426]">
+        <Link href="#contacto" className={`pr-6 border-r-2 border-white hover:text-[#F6B426] ${
+            activeSection === "contacto" ? "text-[#F6B426]" : ""
+          }`}>
           Contato
         </Link>
       </nav>
       <div className="flex items-center space-x-10 h-full">
-        <a 
-          href="https://www.instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >          
-          <Image
-            src="/icons/icon-instagram.svg"
-            alt="Icono de Instagram"
-            width={20}
-            height={20}
-        />
-        </a>
+          <a 
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            >          
+            <Image
+              src="/icons/icon-instagram.svg"
+              alt="Icono de Instagram"
+              width={24}
+              height={24} 
+            />
+          </a>
         <a  
-        href="https://wa.me/5493515930609"
+          href="https://wa.me/5493515930609?text=Hola%2C%20necesito%20un%20presupuesto%20para%20las%20siguientes%20tareas..."
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
@@ -76,6 +105,17 @@ export default function Header() {
           Solicitar Presupuesto
         </a>
       </div>
+
+      <a
+        href="https://wa.me/5493515930609?text=Hola%2C%20quer%C3%ADa%20consultarte%20sobre%20tus%20servicios..."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed -bottom-92 right-6 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full border shadow-lg z-50"
+        aria-label="WhatsApp"
+      >
+        <Image src="/icons/icon-whatsapp.svg" alt="WhatsApp" width={32} height={32} />
+      </a>
+
       
     </header>
   )

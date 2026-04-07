@@ -3,3 +3,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #091242 inset !important; /* tu color de fondo */
+  -webkit-text-fill-color: #fff !important; /* color del texto */
+}

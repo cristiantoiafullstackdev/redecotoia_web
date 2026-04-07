@@ -22,6 +22,52 @@ export default function Contacto() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+      // Validaciones básicas
+    if (!form.name || !form.email || !form.phone || !form.serviceType || !form.message) {
+      alert("Por favor completa todos los campos.");
+      return;
+    }
+
+    // Validación de email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email)) {
+      alert("Por favor ingresa un email válido.");
+      return;
+    }
+
+    // Validación de teléfono (ejemplo simple: solo números y mínimo 8 dígitos)
+    const phoneRegex = /^[0-9]{8,}$/;
+    if (!phoneRegex.test(form.phone)) {
+      alert("Por favor ingresa un teléfono válido.");
+      return;
+    }
+
+    try {
+    const res = await fetch("/api/route-contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    });
+    const data = await res.json();
+
+    if (data.success) {
+      alert("Mensaje enviado correctamente");
+      setForm({
+        name: "",
+        email: "",
+        phone: "",
+        serviceType: "",
+        message: ""
+      });
+      } else {
+        alert("Error al enviar el mensaje");
+      }
+    } catch (error) {
+      console.log(error)
+      alert("Hubo un problema con el servidor");
+    }
+
     const res = await fetch("/api/route-contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -49,7 +95,7 @@ export default function Contacto() {
           Dejanos tus datos y contanos qué necesitás. Nuestro equipo técnico se pondrá en contacto <br/>
            con vos a la brevedad para brindarte la mejor solución en electricidad y climatización.
         </p>
-        <div className="mt-4 flex px-4 space-x-16">
+        <div className="mt-4 flex px-4 space-x-24">
           <div className="space-y-5 flex flex-col items-center">
             <div className="w-12 h-12 p-3 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
                 <Image src="/icons/icon-horario.svg" alt="Horário" width={32} height={32} />
@@ -96,7 +142,7 @@ export default function Contacto() {
                 type="text" 
                 id="nombre" 
                 placeholder="Nombre Completo" 
-                className="w-full p-2 text-white border border-white"
+                className="w-full p-2 text-white border border-white outline-none"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })} 
               />
@@ -106,7 +152,7 @@ export default function Contacto() {
                 type="email" 
                 id="email" 
                 placeholder="Email" 
-                className="w-full p-2 text-white border border-white"
+                className="w-full p-2 text-white border border-white  outline-none"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })} 
               />
@@ -116,7 +162,7 @@ export default function Contacto() {
                 type="text" 
                 id="phone" 
                 placeholder="Teléfono" 
-                className="w-full p-2 text-white border border-white"
+                className="w-full p-2 text-white border border-white outline-none"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })} 
               />
@@ -126,21 +172,23 @@ export default function Contacto() {
               name="serviceType"
               required
               aria-label="Tipo de servicio"
-              value={form.serviceType} // Cambiado de formData a form
+              value={form.serviceType} 
               onChange={(e) => setForm({ ...form, serviceType: e.target.value })} // Cambiado a setForm
-              className="border border-gray-300 rounded-md p-2 focus:ring-2 focus:ring-blue-500 outline-none bg-white text-gray-700"
+              className="border border-white p-2 focus:ring-2 focus:ring-blue-500 outline-none text-white"
             >
-              <option value="" disabled hidden>-- Selecciona un tipo de servicio --</option>
-              <option value="electricidad">Electricidad</option>
-              <option value="refrigeracion">Refrigeración</option>
-              <option value="mantenimientos">Mantenimientos</option>
+              <option value="" disabled hidden className="text-[#111C55]">
+              -- Selecciona un tipo de servicio --
+              </option>
+              <option value="electricidad" className="text-[#111C55]">Electricidad</option>
+              <option value="refrigeracion" className="text-[#111C55]">Refrigeración</option>
+              <option value="mantenimientos" className="text-[#111C55]">Mantenimientos</option>
             </select>
           </div>
           <div className="mt-4">
             <textarea 
               id="mensaje" 
               placeholder="Mensaje" 
-              className="w-full p-3 text-white border border-white" 
+              className="w-full p-3 text-white border border-white outline-none" 
               rows={4} 
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
