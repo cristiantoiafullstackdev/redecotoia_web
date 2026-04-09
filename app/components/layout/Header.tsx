@@ -81,20 +81,21 @@ export default function Header() {
           Contato
         </Link>
       </nav>
-      <div className="flex items-center space-x-10 h-full">
-          <a 
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            >          
-            <Image
-              src="/icons/icon-instagram.svg"
-              alt="Icono de Instagram"
-              width={24}
-              height={24} 
-            />
-          </a>
+      <div className="flex items-center h-full">
+        <a 
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="hover:bg-[#F6B426] rounded-4 p-4"
+        >          
+          <Image
+            src="/icons/icon-instagram.svg"
+            alt="Icono de Instagram"
+            width={24}
+            height={24} 
+          />
+        </a>
         <a  
           href="https://wa.me/5493515930609?text=Hola%2C%20necesito%20un%20presupuesto%20para%20las%20siguientes%20tareas..."
           target="_blank"

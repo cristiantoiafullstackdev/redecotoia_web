@@ -32,10 +32,11 @@ async function main() {
     await prisma.service.create({
       data: {
         title: svc.title,
-        description: svc.description, // Usamos la descripción del JSON
-        imagePath: svc.imagePath,     // Pasamos el path de la imagen
-        price: svc.price,             // Pasamos el precio
-        currency: svc.currency || "ARS", // Si falta en el JSON, ponemos ARS por defecto
+        description: svc.description, 
+        imagePath: svc.imagePath,     
+        price: svc.price,             
+        minUnits: svc.minUnits || 1,
+        currency: svc.currency || "ARS",
         categoryId: svc.categoryId,
       },
     });

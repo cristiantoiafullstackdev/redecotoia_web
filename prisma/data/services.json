@@ -1,89 +1,425 @@
 [
   {
-    "title": "Instalación de Circuitos Eléctricos",
-    "description": "Montaje completo de cableado, tableros y protecciones para viviendas y comercios según normas vigentes.",
-    "imagePath": "/images/tablero-seccional.jpg",
-    "price": 150000,
-    "currency": "ARS",
-    "categoryId": 1
-  },
-  {
-    "title": "Mantenimiento de Circuitos Eléctricos",
-    "description": "Revisión preventiva de tableros y cableados para evitar cortocircuitos y optimizar el consumo energético.",
-    "imagePath": "/images/mantenimiento.jpg",
-    "price": 75000,
-    "currency": "ARS",
-    "categoryId": 3
-  },
-  {
-    "title": "Reparación de Electrodomésticos",
-    "description": "Servicio técnico especializado en la reparación de equipos del hogar con repuestos de calidad.",
-    "imagePath": "/images/reparacion.jpg",
-    "price": 100000,
-    "currency": "ARS",
-    "categoryId": 1
-  },
-  {
-    "title": "Planificación de Proyectos Eléctricos",
-    "description": "Diseño y asesoramiento técnico para nuevas obras, asegurando una distribución eficiente de la carga.",
-    "imagePath": "/images/proyecto-electrico.jpg",
+    "title": "Acometida monofásica doble aislación hasta 10 kW",
+    "description":"Instalación pilar completo con caño, gabinete, tablero principal y cableado normalizado  para viviendas unifamiliares.",
+    "imagePath": "",
     "price": 200000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Acometida trifásica doble aislación hasta 10 kW",
+    "description": "Instalación pilar completo con caño, gabinete, tablero principal y cableado normalizado  para viviendas unifamiliares.",
+    "imagePath": "",
+    "price": 280000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Boca completa de electricidad (de 1 a 10 unidades)",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
+    "imagePath": "",
+    "price": 75000,
+    "minUnits": 2,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Boca completa de electricidad (de 11 a 20 unidades)",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
+    "imagePath": "",
+    "price": 70000,
+    "minUnits": 11,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Boca completa de electricidad (de 21 a 50 unidades)",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
+    "imagePath": "",
+    "price": 65000,
+    "minUnits": 21,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Boca completa de electricidad (de 51 a 100 unidades)",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
+    "imagePath": "",
+    "price": 60000,
+    "minUnits": 51,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Boca completa en obras (de 1 a 50 unidades)",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos en obras nuevas o reformas.",
+    "imagePath": "",
+    "price": 50000,
+    "minUnits": 10,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Boca completa en obras (de 51 a 100 unidades)",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos en obras nuevas o reformas.",
+    "imagePath": "",
+    "price": 40000,
+    "minUnits": 51,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Boca completa en obras (de 101 a 200 unidades)",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos en obras nuevas o reformas.",
+    "imagePath": "",
+    "price": 35000,
+    "minUnits": 101,
     "currency": "ARS",
     "categoryId": 1
   },
   {
     "title": "Certificaciones de Instalaciones Eléctricas",
     "description": "Emisión de certificados de aptitud eléctrica para trámites municipales, comerciales y de EPEC.",
-    "imagePath": "/images/certificacion.jpg",
+    "imagePath": "",
     "price": 300000,
+    "minUnits": 1,
     "currency": "ARS",
     "categoryId": 1
   },
   {
-    "title": "Instalación de Sistemas de Seguridad",
-    "description": "Montaje de cámaras, alarmas y sensores de movimiento para la protección integral de su propiedad.",
-    "imagePath": "/images/seguridad.jpg",
-    "price": 80000,
+    "title": "Cableado por boca",
+    "description": "Instalación de cableado por boca con materiales normalizados. Ideal para reformas, ampliaciones o mejoras de instalaciones eléctricas existentes.",
+    "imagePath": "",
+    "price": 30000,
+    "minUnits": 4,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+   {
+    "title": "Recableado por boca",
+    "description": "Reemplazo de cableado existente con materiales normalizados. Ideal para reformas, ampliaciones o mejoras de instalaciones eléctricas existentes.",
+    "imagePath": "",
+    "price": 40000,
+    "minUnits": 4,
+    "currency": "ARS",
     "categoryId": 1
   },
   {
-    "title": "Instalación de Sistemas de Iluminación",
-    "description": "Diseño e instalación de luminaria LED decorativa y funcional para interiores, patios y fachadas.",
-    "imagePath": "/images/iluminacion-exterior.jpg",
+    "title": "Canalización por boca enbutida",
+    "description": "Canalización e instalacion de cañería enbutida con materiales normalizados.",
+    "imagePath": "",
     "price": 50000,
+    "minUnits": 2,
     "currency": "ARS",
     "categoryId": 1
   },
   {
-    "title": "Instalación de Aires Acondicionados",
-    "description": "Instalación profesional de equipos Split y ventana con presurización y materiales normalizados.",
-    "imagePath": "/images/aire-vacio-arriba.jpg",
-    "price": 150000,
+    "title": "Canalización por boca a la vista",
+    "description": "Canalización e instalacion de cañería a la vista con materiales normalizados.",
+    "imagePath": "",
+    "price": 40000,
+    "minUnits": 2,
     "currency": "ARS",
-    "categoryId": 2
+    "categoryId": 1
   },
   {
-    "title": "Desinstalación de Aires Acondicionados",
-    "description": "Retiro técnico de unidades con recuperación de gas refrigerante para traslados o reformas.",
-    "imagePath": "/images/aire-vacio.jpg",
-    "price": 75000,
+    "title": "Instalación Bandejas portacables",
+    "description": "Instalación de bandejas portacables para organización y protección de cableado eléctrico en obras nuevas o reformas.",
+    "imagePath": "",
+    "price": 50000,
+    "minUnits": 3,
     "currency": "ARS",
-    "categoryId": 2
+    "categoryId": 1
+  },
+    {
+    "title": "Canalización por boca Cablecanal",
+    "description": "Canalización e instalacion de cañería Cablecanal con materiales normalizados.",
+    "imagePath": "",
+    "price": 30000,
+    "minUnits": 4,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "CCTV y Videovigilancia - Instalación embutida por Cámara",
+    "description": "Instalación de sistemas de videovigilancia con cámaras, DVR y accesorios con cañería y cableado embutidos.",
+    "imagePath": "",
+    "price": 115000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+    {
+    "title": "CCTV y Videovigilancia - Instalación a la vista por Cámara",
+    "description": "Instalación de sistemas de videovigilancia con cámaras, DVR y accesorios a la vista.",
+    "imagePath": "",
+    "price": 85000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Colocación de Luminarias livianas",
+    "description": "Colocación de luminarias livianas con cableado normalizado. Ideal para iluminación general en viviendas, oficinas y comercios.",
+    "imagePath": "",
+    "price": 25000,
+    "minUnits": 4,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Colocación de Luminarias pesadas",
+    "description": "Colocación de luminarias pesadas con cableado normalizado. Ideal para iluminación general en viviendas, oficinas y comercios.",
+    "imagePath": "",
+    "price": 40000,
+    "minUnits": 3,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Instalacion Luces de Emergencia",
+    "description": "Instalación de luces de emergencia con cableado normalizado. Ideal para garantizar la seguridad en caso de cortes de energía en viviendas, oficinas, comercios y pequeñas industrias.",
+    "imagePath": "",
+    "price": 50000,
+    "minUnits": 2,
+    "currency": "ARS",
+    "categoryId": 1
+  },
+  {
+    "title": "Artefactos Eléctricos - Extraxtores de aire de Cocinas",
+    "description": "Instalación de extractores de aire para cocinas con cableado normalizado. Ideal para mejorar la ventilación y reducir la humedad en cocinas residenciales y comerciales.",
+    "imagePath": "",
+    "price": 200000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Artefactos Eléctricos - Ventilador de techo sin luces",
+    "description": "Instalación de ventiladores de techo sin luces con cableado normalizado. Ideal para mejorar la ventilación en viviendas, oficinas y comercios.",
+    "imagePath": "",
+    "price": 100000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Artefactos Eléctricos - Ventilador de techo con luces",
+    "description": "Instalación de ventiladores de techo con luces con cableado normalizado. Ideal para mejorar la ventilación en viviendas, oficinas y comercios.",
+    "imagePath": "",
+    "price": 120000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Emergencias - de Lunes a Viernes de 8 a 18 hs",
+    "description": "Servicio de atención de emergencias eléctricas durante días hábiles en horario comercial. Ideal para resolver problemas eléctricos urgentes en viviendas, oficinas y comercios.",
+    "imagePath": "",
+    "price": 80000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Puesta a Tierra",
+    "description": "Instalación de sistemas de puesta a tierra con materiales normalizados. Ideal para garantizar la seguridad eléctrica en viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 75000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Tableros Eléctricos - Tablero Principal",
+    "description": "Instalación de tableros eléctricos principales con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 75000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Tableros Eléctricos - Tablero Seccional hasta 4 polos",
+    "description": "Instalación de tableros eléctricos seccionales con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 100000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Tableros Eléctricos - Tablero Seccional hasta 8 polos",
+    "description": "Instalación de tableros eléctricos seccionales con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 160000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 1    
+  },
+  {
+    "title": "Instalación Aire Acondicionado Split hasta 3499fg",
+    "description": "Instalación de aire acondicionado split hasta 3499fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 120000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Instalación Aire Acondicionado Split hasta 5499fg",
+    "description": "Instalación de aire acondicionado split hasta 5499fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 150000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Instalación Aire Acondicionado Split hasta 6299fg",
+    "description": "Instalación de aire acondicionado split hasta 6299fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 180000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Instalación Aire Acondicionado Split hasta 7999fg",
+    "description": "Instalación de aire acondicionado split hasta 7999fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 210000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Instalación Aire Acondicionado Split hasta 8999fg",
+    "description": "Instalación de aire acondicionado split hasta 8999fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "imagePath": "",
+    "price": 250000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Preinstalación simple de Aires Acondicionado",
+    "description": "Preinstalación simple de aire acondicionado con materiales normalizados. Ideal para viviendas, oficinas, comercios y departamentos que planean instalar aire acondicionado en el futuro.",
+    "imagePath": "",
+    "price": 150000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Preinstalación compleja de Aires Acondicionado",
+    "description": "Preinstalación compleja de aire acondicionado con materiales normalizados. Ideal para viviendas, oficinas, comercios y departamentos que planean instalar aire acondicionado en el futuro.",
+    "imagePath": "",
+    "price": 250000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Desinstalación de Aires Acondicionados hasta 3499fg",
+    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "imagePath": "",
+    "price": 75000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Desinstalación de Aires Acondicionados hasta 5499fg",
+    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "imagePath": "",
+    "price": 90000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Desinstalación de Aires Acondicionados hasta 6299fg",
+    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "imagePath": "",
+    "price": 120000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Desinstalación de Aires Acondicionados hasta 7999fg",
+    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "imagePath": "",
+    "price": 150000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Desinstalación de Aires Acondicionados hasta 8999fg",
+    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "imagePath": "",
+    "price": 200000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
   },
   {
     "title": "Mantenimiento de Aires Acondicionados",
-    "description": "Limpieza profunda de filtros, evaporadores y condensadores para mejorar el rendimiento y la higiene.",
-    "imagePath": "/images/aire-mantenimiento.jpg",
+    "description": "Limpieza profunda de filtros, turbinas, evaporadores y condensadores para mejorar el rendimiento y la higiene.",
+    "imagePath": "",
     "price": 75000,
-    "currency": "ARS",
-    "categoryId": 3
-  },
-  {
-    "title": "Recarga de Aires Acondicionados",
-    "description": "Control de presión y recarga de gas refrigerante para asegurar el enfriamiento óptimo de su equipo.",
-    "imagePath": "/images/aire-vacio.jpg",
-    "price": 75000,
+    "minUnits": 1,
     "currency": "ARS",
     "categoryId": 2    
+  },
+  {
+    "title": "Recargas de Aires Acondicionados",
+    "description": "Limpieza profunda de filtros, turbinas, evaporadores y condensadores para mejorar el rendimiento y la higiene.",
+    "imagePath": "",
+    "price": 90000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": " Recambio de capacitor de Aires Acondicionados",
+    "description": "Limpieza profunda de filtros, turbinas, evaporadores y condensadores para mejorar el rendimiento y la higiene.",
+    "imagePath": "",
+    "price": 90000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 2    
+  },
+  {
+    "title": "Mantenimiento Básico",
+    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 1 visita quinsenal + 1 urgencia al mes. Hasta 4hs",
+    "imagePath": "",
+    "price": 160000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 3    
+  },
+  {
+    "title": "Mantenimiento Standard",
+    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 1 visita semanal + 1 urgencia al mes. Hasta 4hs",
+    "imagePath": "",
+    "price": 240000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 3    
+  },
+  {
+    "title": "Mantenimiento Premium",
+    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 2 visitas semanales + 1 urgencia al mes. Hasta 4hs",
+    "imagePath": "",
+    "price": 360000,
+    "minUnits": 1,
+    "currency": "ARS",
+    "categoryId": 3    
   }
-]
+] 

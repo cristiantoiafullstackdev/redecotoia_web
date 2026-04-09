@@ -21,6 +21,7 @@ model Service {
   imagePath    String 
   price       Float
   currency    String
+  minUnits    Int      @default(1)
   categoryId  Int
   category    Category @relation(fields: [categoryId], references: [id])
 }
