@@ -31,7 +31,7 @@ export default function Topbar() {
             </p>
           </a>
           <a
-            href="https://wa.me/5493515930609"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_CELULAR_MESSAGE || '')}`}
             target="_blank"
             rel="noopener noreferrer" 
             className="text-white text-xs"

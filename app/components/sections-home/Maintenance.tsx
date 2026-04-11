@@ -26,7 +26,7 @@ export default function Maintenance() {
           </div>
           <div className="group inline-block mt-6">
             <a
-              href="https://wa.me/5493515930609"
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_ELEGIR_PLAN_BASIC_MESSAGE || '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-block bg-[#091242] text-white font-bold py-3 px-10 overflow-hidden"
@@ -49,7 +49,7 @@ export default function Maintenance() {
           </div>
           <div className="group inline-block mt-6">
             <a
-              href="https://wa.me/5493515930609"
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_ELEGIR_PLAN_STANDARD_MESSAGE || '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-block bg-[#F6B426] text-[#3A3C40] font-bold py-3 px-10 overflow-hidden"
@@ -72,7 +72,7 @@ export default function Maintenance() {
           </div>
           <div className="group inline-block mt-6">
             <a
-              href="https://wa.me/5493515930609"
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_ELEGIR_PLAN_PREMIUM_MESSAGE || '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-block bg-[#091242] text-white font-bold py-3 px-10 overflow-hidden"

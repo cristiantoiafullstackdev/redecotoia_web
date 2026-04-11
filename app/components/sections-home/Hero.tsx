@@ -20,7 +20,7 @@ export default function Hero() {
         </p>
         <div className="group inline-block">
           <a
-            href="https://wa.me/5493515930609"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_HABLEMOS_MESSAGE || '')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-block bg-[#F6B426] text-[#3A3C40] font-bold py-2 px-10 overflow-hidden"

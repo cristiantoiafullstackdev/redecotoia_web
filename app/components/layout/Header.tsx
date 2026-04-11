@@ -97,7 +97,7 @@ export default function Header() {
           />
         </a>
         <a  
-          href="https://wa.me/5493515930609?text=Hola%2C%20necesito%20un%20presupuesto%20para%20las%20siguientes%20tareas..."
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_SOLICITAR_PRESUPUESTO_MESSAGE || '')}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
