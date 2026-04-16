@@ -1,4 +1,5 @@
-import Image from "next/image"
+import { IconElectricidad, IconMantenimiento, IconRefrigeracion } from "../ui/Icons"
+import Link from "next/link"
 
 export default function ServicesCategoriesSection() {
   return (
@@ -18,45 +19,49 @@ export default function ServicesCategoriesSection() {
           
         <div className="w-full grid grid-cols-2 gap-12">
           
-          <div className="flex">
-            <Image src="/icons/icon-electricidad.svg" alt="Icono de Electricidad" className="mr-6" width={50} height={50} />
-            <div className="pl-4 border-l border-[#1C1F35]">
-              <h3 className="text-lg text-[#1C1F35] font-semibold hover:text-[#F6B426]">
-                Electricidad <br/>
-                Recidencial e Inductrial
-              </h3>
-              <p className="text-sm text-[#1C1F35]">
-                Instalaciones seguras, tableros <br />
-                eléctricos, iluminación Led y <br />
-                reparación 24/7
-              </p>
+          <Link href="/servicios/electricidad">
+            <div className="flex gap-2 cursor-pointer">
+              <IconElectricidad />
+              <div className="pl-4 border-l border-[#1C1F35]">
+                <h3 className="text-lg text-[#1C1F35] font-semibold hover:text-[#F6B426]">
+                  Electricidad <br/>
+                  Recidencial e Inductrial
+                </h3>
+                <p className="text-sm text-[#1C1F35]">
+                  Instalaciones seguras, tableros <br />
+                  eléctricos, iluminación Led y <br />
+                  reparación 24/7
+                </p>
+              </div>
             </div>
-          </div>
-            
-          <div className="flex">
-            <Image src="/icons/icon-refrigeracion.svg" alt="Icono de Refrigeración" className="mr-6" width={50} height={50} />
-            <div className="pl-4 border-l border-[#1C1F35]">
-              <h3 className="text-lg text-[#1C1F35] font-semibold mb-2 hover:text-[#F6B426]">Aire Acondicionado</h3>
-              <p className="text-sm text-[#1C1F35]">
-                Instalación y mantenimiento de <br />
-                sistemas de refrigeración para <br />
-                hogares y empresas. 
-              </p>
+          </Link>
+          <Link href="/servicios/refrigeracion"> 
+            <div className="flex gap-2 cursor-pointer">
+              <IconRefrigeracion />
+              <div className="pl-4 border-l border-[#1C1F35]">
+                <h3 className="text-lg text-[#1C1F35] font-semibold mb-2 hover:text-[#F6B426]">Aire Acondicionado</h3>
+                <p className="text-sm text-[#1C1F35]">
+                  Instalación y mantenimiento de <br />
+                  sistemas de refrigeración para <br />
+                  hogares y empresas. 
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex">
-            <Image src="/icons/icon-mantenimiento.svg" alt="Icono de Mantenimiento" className="mr-6" width={50} height={50} />
-            <div className="pl-4 border-l border-[#1C1F35]">
-              <h3 className="text-lg text-[#1C1F35] font-semibold mb-2 hover:text-[#F6B426]">Mantenimiento Preventivo</h3>
-              <p className="text-sm text-[#1C1F35]">
-                Planes mensuales para empresas<br />
-                que aseguran el funcionamiento<br />
-                óptimo de tus sistemas eléctricos<br />
-                y de climatización. 
-              </p>
+          </Link>
+          <Link href="/servicios/mantenimiento">
+            <div className="flex gap-4 cursor-pointer">
+              <IconMantenimiento />
+              <div className="pl-4 border-l border-[#1C1F35]">
+                <h3 className="text-lg text-[#1C1F35] font-semibold mb-2 hover:text-[#F6B426]">Mantenimiento Preventivo</h3>
+                <p className="text-sm text-[#1C1F35]">
+                  Planes mensuales para empresas<br />
+                  que aseguran el funcionamiento<br />
+                  óptimo de tus sistemas eléctricos<br />
+                  y de climatización. 
+                </p>
+              </div>
             </div>
-          </div>      
+          </Link>
         </div>
       </div>  
     </section>

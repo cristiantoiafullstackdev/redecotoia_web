@@ -1,17 +1,17 @@
 import Link from "next/link";
-import Image from "next/image";
+import { LogoRedecoToia, IconHorario, IconEmail, IconPhone } from "../ui/Icons";
 
 export default function Topbar() {
   return (
     <div className="w-full bg-[#091242]">
       <div className="flex items-center justify-around px-18 py-6">
         <Link href="/">
-          <Image src="/images/logo.svg" alt="Logo Redeco Toia" width={180} height={60} />
+          <LogoRedecoToia/>
         </Link>
         <div className="flex space-x-5">
           <div className="flex items-center space-x-5">
             <div className="min-w-14 min-h-14 p-3 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
-              <Image src="/icons/icon-horario.svg" alt="Horário" width={32} height={32} />
+              <IconHorario />
             </div>
             <p className="text-white text-xs">
               Lun - Sab 9:00 - 18:00 <br />
@@ -23,7 +23,7 @@ export default function Topbar() {
             className="flex items-center space-x-2"
           >
             <div className="min-w-14 min-h-14 p-3 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
-              <Image src="/icons/icon-email.svg" alt="Email" width={32} height={32} />
+              <IconEmail />
             </div>
             <p className="text-white text-xs">
               E-mail: <br />
@@ -38,7 +38,7 @@ export default function Topbar() {
           >
             <div className="flex items-center space-x-2">
               <div className="min-w-14 min-h-14 p-3 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
-                <Image src="/icons/icon-phone.svg" alt="Telefone" width={32} height={32} />
+                <IconPhone />
               </div>
               <p>
                 Celular: <br />

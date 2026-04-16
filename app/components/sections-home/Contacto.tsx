@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image"
-
+import { IconHorario, IconEmail, IconPhone } from "../ui/Icons";
 interface ContactFormData {
   name: string;
   email: string;
@@ -97,8 +96,8 @@ export default function Contacto() {
         </p>
         <div className="mt-4 flex px-4 space-x-24">
           <div className="space-y-5 flex flex-col items-center">
-            <div className="w-12 h-12 p-3 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
-                <Image src="/icons/icon-horario.svg" alt="Horário" width={32} height={32} />
+            <div className="w-14 h-14 p-2.5 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
+                <IconHorario />
             </div>
             <p className="text-white text-xs">
               Lun - Sab 9:00 - 18:00 <br />
@@ -109,8 +108,8 @@ export default function Contacto() {
             href="mailto:toiacristiandaniel@gmail.com"
             className="space-y-5 flex flex-col items-center"
           >
-            <div className="w-12 h-12 p-3 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
-              <Image src="/icons/icon-email.svg" alt="Email" width={32} height={32} />
+            <div className="w-14 h-14 p-2.5 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
+              <IconEmail />
             </div>
             <p className="text-white text-xs">
               E-mail: <br />
@@ -124,8 +123,8 @@ export default function Contacto() {
             className="text-white text-xs"
           >
             <div className="space-y-5 flex flex-col items-center">
-              <div className="w-12 h-12 p-3 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
-                <Image src="/icons/icon-phone.svg" alt="Telefone" width={32} height={32} />
+              <div className="w-14 h-14 p-2.5 bg-[#111C55] border-2 border-[#273270] rounded-4xl">
+                <IconPhone />
               </div>
               <p>
                 Celular: <br />
@@ -174,7 +173,7 @@ export default function Contacto() {
               aria-label="Tipo de servicio"
               value={form.serviceType} 
               onChange={(e) => setForm({ ...form, serviceType: e.target.value })} // Cambiado a setForm
-              className="border border-white p-2 focus:ring-2 focus:ring-blue-500 outline-none text-white"
+              className="border border-white p-2 focus:ring-2 focus:ring-blue-500 outline-none text-white cursor-pointer"
             >
               <option value="" disabled hidden>
                 Tipo de Servicio*

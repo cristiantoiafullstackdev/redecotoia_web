@@ -39,13 +39,13 @@ export default function About() {
             </p>
           </div>
           <div className="flex flex-col h-28 mt-8 gap-4">
-            <div className="bg-white flex w-full"> 
+            <div className="bg-white flex w-full p-1"> 
               <button 
                 onClick={() => setActiveTab('enfoque')}
                 className={`flex-1 py-2 text-[#1C1F35] font-semibold transition-colors ${
                   activeTab === 'enfoque' 
                   ? 'bg-[#F6B426]' 
-                  : 'hover:bg-[#dbdbdb]/70'
+                  : 'hover:bg-[#dbdbdb]/70 cursor-pointer'
                 }`}
               >
                 Nuestro enfoque
@@ -56,7 +56,7 @@ export default function About() {
                 className={`flex-1 py-2 text-[#1C1F35] font-semibold transition-colors ${
                   activeTab === 'mision' 
                   ? 'bg-[#F6B426]' 
-                  : 'hover:bg-[#dbdbdb]/70'
+                  : 'hover:bg-[#dbdbdb]/70 cursor-pointer'
                 }`}
               >
                 Misión
@@ -67,7 +67,7 @@ export default function About() {
                 className={`flex-1 py-2 text-[#1C1F35] font-semibold transition-colors ${
                   activeTab === 'valores' 
                   ? 'bg-[#F6B426]' 
-                  : 'hover:bg-[#dbdbdb]/70'
+                  : 'hover:bg-[#dbdbdb]/70 cursor-pointer'
                 }`}
               >
                 Valores

@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link"
-import Image from "next/image"
+import { IconInstagram, IconWhatsApp, IconWrapper } from "../ui/Icons"
 import { useState, useEffect } from "react"
 
 export default function Header() {
@@ -39,13 +39,7 @@ export default function Header() {
             className="hover:text-[#F6B426] flex items-center"
           >
             Servicios
-            <Image
-              src="/icons/icon-wrapper.svg"
-              alt="Icono de Wrapper"
-              width={10}
-              height={10}
-              className="inline-block ml-2"
-            />
+            <IconWrapper className="inline-block ml-2"/>
           </Link>
           {/* Menú desplegable */}
           <div className="absolute left-0 hidden w-40 bg-white text-black shadow-md group-hover:block">
@@ -89,13 +83,7 @@ export default function Header() {
           aria-label="Instagram"
           className="px-4"
         >          
-          <Image
-            src="/icons/icon-instagram.svg"
-            alt="Icono de Instagram"
-            width={28}
-            height={28} 
-            className="hover:opacity-30 transition-opacity duration-300"
-          />
+          <IconInstagram className="hover:opacity-30 transition-opacity duration-300"/>
         </a>
         <a  
           href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(process.env.NEXT_PUBLIC_SOLICITAR_PRESUPUESTO_MESSAGE || '')}`}
@@ -112,13 +100,11 @@ export default function Header() {
         href="https://wa.me/5493515930609?text=Hola%2C%20quer%C3%ADa%20consultarte%20sobre%20tus%20servicios..."
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed -bottom-92 right-6 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full border shadow-lg z-50"
+        className="fixed -bottom-102 right-6 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full border shadow-lg z-50"
         aria-label="WhatsApp"
       >
-        <Image src="/icons/icon-whatsapp.svg" alt="WhatsApp" width={32} height={32} />
-      </a>
-
-      
+        <IconWhatsApp className="w-10 h-10"/>
+      </a>      
     </header>
   )
 }
