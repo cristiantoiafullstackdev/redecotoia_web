@@ -20,10 +20,15 @@ const services = await prisma.service.findMany({
       <h1 className="text-3xl font-bold mb-10">Servicios Eléctricos</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
-          <div key={service.id}>
-            <h2 className="text-xl font-bold">{service.title}</h2>
+          <div 
+            key={service.id}
+            className="border border-[#273270] p-6 flex flex-col items-center text-center"
+          >
+            <h2 className="text-lg font-semibold mb-4 bg-[#111C55] text-white py-2 px-4">
+              {service.title}
+            </h2>
             <p>{service.description}</p>
-            <p className="text-blue-600 font-semibold">
+            <p className="text-[#273270] font-semibold">
               {service.currency} {service.price.toLocaleString('es-AR')}
             </p>
             {/* Importante: usar imagePath */}

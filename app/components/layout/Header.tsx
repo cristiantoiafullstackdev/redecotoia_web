@@ -25,7 +25,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full h-14 flex justify-between items-center px-54 bg-[rgba(9,18,66,0.5)] backdrop-blur-md">
+    <header className="w-full h-14 flex justify-around  items-center  bg-[rgba(9,18,66,0.5)] backdrop-blur-md">
       <nav className="text-white flex space-x-5">
         <Link href="/" className={`pr-6 border-r-2 border-white hover:text-[#F6B426] ${
             activeSection === "" ? "text-[#F6B426]" : ""
@@ -78,7 +78,7 @@ export default function Header() {
         <Link href="#contacto" className={`pr-6 border-r-2 border-white hover:text-[#F6B426] ${
             activeSection === "contacto" ? "text-[#F6B426]" : ""
           }`}>
-          Contato
+          Contacto
         </Link>
       </nav>
       <div className="flex items-center h-full">
@@ -87,13 +87,14 @@ export default function Header() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
-          className="hover:bg-[#F6B426] rounded-4 p-4"
+          className="px-4"
         >          
           <Image
             src="/icons/icon-instagram.svg"
             alt="Icono de Instagram"
-            width={24}
-            height={24} 
+            width={28}
+            height={28} 
+            className="hover:opacity-30 transition-opacity duration-300"
           />
         </a>
         <a  
@@ -101,7 +102,7 @@ export default function Header() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="WhatsApp"
-          className="px-4 flex items-center text-sm bg-white hover:bg-[#F6B426] text-black h-full"
+          className="px-4 flex items-center text-sm bg-white hover:bg-[#F6B426] duration-200 text-black h-full"
         >
           Solicitar Presupuesto
         </a>

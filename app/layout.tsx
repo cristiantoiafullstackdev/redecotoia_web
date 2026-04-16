@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rubik } from "next/font/google";
 import "./globals.css";
 import Topbar from "@/app/components/layout/Topbar";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
 
-const font = Inter({
+const font = Rubik({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
 }); 
@@ -34,10 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className="min-h-screen flex flex-col"
-      >
-        <div className={`flex flex-col space-x-0 fixed w-full z-50 ${font.className}`}>
+      <body className={`${font.className} min-h-screen flex flex-col`}>
+        <div className="flex flex-col space-x-0 fixed w-full z-50">
         <Topbar />
         <Header />
         </div>

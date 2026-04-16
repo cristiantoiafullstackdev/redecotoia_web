@@ -86,7 +86,7 @@ export default function Contacto() {
     <section id="contacto" className="px-54 py-12">
       <div className="w-full p-12 bg-[#091242] text-center">
         <h5 className="text-xs text-white font-bold mb-4">
-          <span className="border-l-4 border-[#F6B426] pl-4">
+          <span className="border-l-3 border-[#F6B426] px-4 py-1 bg-[#3A3C40]/50">
             Contacto
           </span>
         </h5>
@@ -141,7 +141,7 @@ export default function Contacto() {
               <input 
                 type="text" 
                 id="nombre" 
-                placeholder="Nombre Completo" 
+                placeholder="Nombre Completo*" 
                 className="w-full p-2 text-white border border-white outline-none"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })} 
@@ -151,7 +151,7 @@ export default function Contacto() {
               <input 
                 type="email" 
                 id="email" 
-                placeholder="Email" 
+                placeholder="Email*" 
                 className="w-full p-2 text-white border border-white  outline-none"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })} 
@@ -161,7 +161,7 @@ export default function Contacto() {
               <input 
                 type="text" 
                 id="phone" 
-                placeholder="Teléfono" 
+                placeholder="Teléfono*" 
                 className="w-full p-2 text-white border border-white outline-none"
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })} 
@@ -176,8 +176,8 @@ export default function Contacto() {
               onChange={(e) => setForm({ ...form, serviceType: e.target.value })} // Cambiado a setForm
               className="border border-white p-2 focus:ring-2 focus:ring-blue-500 outline-none text-white"
             >
-              <option value="" disabled hidden className="text-[#111C55]">
-              -- Selecciona un tipo de servicio --
+              <option value="" disabled hidden>
+                Tipo de Servicio*
               </option>
               <option value="electricidad" className="text-[#111C55]">Electricidad</option>
               <option value="refrigeracion" className="text-[#111C55]">Refrigeración</option>
@@ -187,7 +187,7 @@ export default function Contacto() {
           <div className="mt-4">
             <textarea 
               id="mensaje" 
-              placeholder="Mensaje" 
+              placeholder="Mensaje*" 
               className="w-full p-3 text-white border border-white outline-none" 
               rows={4} 
               value={form.message}
@@ -199,7 +199,7 @@ export default function Contacto() {
               type="submit"
               className="relative inline-block bg-[#F6B426] text-[#3A3C40] font-bold py-2 px-10 overflow-hidden"
             >
-              <span className="relative z-10">Enviar Formulario</span>
+              <span className="relative z-10 text-[#23212A]">Enviar Formulario</span>
               <span className="absolute bottom-0 right-0 w-8 h-8 bg-white rounded-tl-full transition-all duration-300 ease-out group-hover:w-24 group-hover:h-24"></span>
             </button>
           </div>
