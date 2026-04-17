@@ -4,6 +4,7 @@ import "./globals.css";
 import Topbar from "@/app/components/layout/Topbar";
 import Header from "@/app/components/layout/Header";
 import Footer from "@/app/components/layout/Footer";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const font = Rubik({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );

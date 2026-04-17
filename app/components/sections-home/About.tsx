@@ -19,7 +19,7 @@ export default function About() {
           <Image 
             src="/images/photo-about2.png" 
             alt="Imagen pequeña" 
-            className="absolute -bottom-8 right-0 w-40 border-12 border-white"
+            className="absolute -bottom-8 right-0 w-40 border-12 border-[#dbdbdb]"
             width={90}
             height={60}
           />
