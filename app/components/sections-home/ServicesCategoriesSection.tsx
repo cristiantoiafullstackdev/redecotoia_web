@@ -1,69 +1,66 @@
-import { IconElectricidad, IconMantenimiento, IconRefrigeracion } from "../ui/Icons"
-import Link from "next/link"
+import { IconElectricidad, IconMantenimiento, IconRefrigeracion } from "../ui/Icons";
+import Link from "next/link";
+
+const SERVICES = [
+  {
+    title: "Electricidad Residencial e Industrial",
+    description: "Instalaciones seguras, tableros eléctricos, iluminación Led y reparación 24/7.",
+    href: "/servicios/electricidad",
+    icon: <IconElectricidad />,
+  },
+  {
+    title: "Aire Acondicionado",
+    description: "Instalación y mantenimiento de sistemas de refrigeración para hogares y empresas.",
+    href: "/servicios/refrigeracion",
+    icon: <IconRefrigeracion />,
+  },
+  {
+    title: "Mantenimiento Preventivo",
+    description: "Planes mensuales para empresas que aseguran el funcionamiento óptimo de tus sistemas.",
+    href: "/servicios/mantenimiento",
+    icon: <IconMantenimiento />,
+  },
+];
 
 export default function ServicesCategoriesSection() {
   return (
-    
-      
-    <section id="services" className="w-full bg-[#DBDBDB]">
-      <div className='w-3/4 mx-auto flex justify-between gap-16 my-20'>
-        <div className="w-1/3">
-          <h5 className="w-3/4 px-4 py-1 text-xs font-bold mb-4 border-l-3 border-[#F6B426] bg-[#3A3C40]/20">
-            A que nos Dedicamos</h5>
-          <h2 className="w-full text-2xl font-bold">
-            Garantizamos el <br />
-            Confort de tu <br />
+    <section id="services" className="w-full bg-[#DBDBDB] py-20 px-6">
+      <div className="max-w-286 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+        
+        {/* Título de Sección: Ocupa el espacio necesario, no uno fijo */}
+        <div className="shrink-0 lg:w-87.5">
+          <h5 className="inline-block px-4 py-1 text-xs font-bold mb-4 border-l-3 border-[#F6B426] bg-[#3A3C40]/20 tracking-wider">
+            A qué nos dedicamos
+          </h5>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1C1F35] leading-tight">
+            Garantizamos el <br className="hidden md:block" />
+            Confort de tu <br className="hidden md:block" />
             Hogar y Empresa
           </h2>
         </div>
-          
-        <div className="w-full grid grid-cols-2 gap-12">
-          
-          <Link href="/servicios/electricidad">
-            <div className="flex gap-2 cursor-pointer">
-              <IconElectricidad />
-              <div className="pl-4 border-l border-[#1C1F35]">
-                <h3 className="text-lg text-[#1C1F35] font-semibold hover:text-[#F6B426]">
-                  Electricidad <br/>
-                  Recidencial e Inductrial
-                </h3>
-                <p className="text-sm text-[#1C1F35]">
-                  Instalaciones seguras, tableros <br />
-                  eléctricos, iluminación Led y <br />
-                  reparación 24/7
-                </p>
+
+        {/* Grid de Servicios: Se ajusta solo */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 w-full">
+          {SERVICES.map((service, index) => (
+            <Link key={index} href={service.href} className="group">
+              <div className="flex gap-4">
+                <div className="w-16 shrink-0 transition-transform group-hover:scale-110">
+                  {service.icon}
+                </div>
+                <div className="pl-4 border-l border-[#1C1F35]/30">
+                  <h3 className="text-lg text-[#1C1F35] font-bold mb-2 group-hover:text-[#F6B426] transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-[#1C1F35]/80 leading-relaxed max-w-70">
+                    {service.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          </Link>
-          <Link href="/servicios/refrigeracion"> 
-            <div className="flex gap-2 cursor-pointer">
-              <IconRefrigeracion />
-              <div className="pl-4 border-l border-[#1C1F35]">
-                <h3 className="text-lg text-[#1C1F35] font-semibold mb-2 hover:text-[#F6B426]">Aire Acondicionado</h3>
-                <p className="text-sm text-[#1C1F35]">
-                  Instalación y mantenimiento de <br />
-                  sistemas de refrigeración para <br />
-                  hogares y empresas. 
-                </p>
-              </div>
-            </div>
-          </Link>
-          <Link href="/servicios/mantenimiento">
-            <div className="flex gap-4 cursor-pointer">
-              <IconMantenimiento />
-              <div className="pl-4 border-l border-[#1C1F35]">
-                <h3 className="text-lg text-[#1C1F35] font-semibold mb-2 hover:text-[#F6B426]">Mantenimiento Preventivo</h3>
-                <p className="text-sm text-[#1C1F35]">
-                  Planes mensuales para empresas<br />
-                  que aseguran el funcionamiento<br />
-                  óptimo de tus sistemas eléctricos<br />
-                  y de climatización. 
-                </p>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          ))}
         </div>
-      </div>  
+        
+      </div>
     </section>
-  )
+  );
 }

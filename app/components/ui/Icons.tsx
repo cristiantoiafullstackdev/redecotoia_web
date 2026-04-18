@@ -89,9 +89,27 @@ export const IconRefrigeracion = ({ className }: IconProps) => (
 
 // 8. Icono WhatsApp
 export const IconWhatsApp = ({ className }: IconProps) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width="64" 
+    height="64" 
+    viewBox="0 0 24 24" 
+    stroke="#ffffff" // Borde blanco
+    strokeWidth="1.5" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className={className}
+  >
+    {/* Este primer path es el cuerpo. Le ponemos el fill verde */}
+    <path 
+      d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" 
+      fill="#25D366" 
+    />
+    {/* Este es el dibujo del teléfono. Lo dejamos con fill blanco o transparente */}
+    <path 
+      d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" 
+      fill="white"
+    />
   </svg>
 );
 
