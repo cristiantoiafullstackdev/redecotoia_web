@@ -2,6 +2,10 @@ import prisma from "@/lib/prisma";
 import Image from "next/image";
 
 export default async function ElectricidadPage() {
+/* LÓGICA DE DATOS: Categoría 2
+   ESTE BLOQUE: Aquí el ORM (Prisma) busca específicamente los servicios de Aire Acondicionado 
+   y Refrigeración. Es importante mantener la consistencia de estos IDs en tu DB.
+*/  
 const services = await prisma.service.findMany({
   where: { categoryId: 2 },
   select: {
@@ -14,7 +18,9 @@ const services = await prisma.service.findMany({
   },
 });
   
-
+  /* ESTRUCTURA VISUAL: Layout de Refrigeración
+   ESTE BLOQUE: Mantienes el padding lateral ancho (px-54) y el margen superior (mt-40).
+  */
   return (
     <div className="mt-40 px-54 py-8 w-full min-h-screen">
       <h1 className="text-3xl font-bold mb-10">Servicios de Refrigeración</h1>
@@ -26,7 +32,10 @@ const services = await prisma.service.findMany({
             <p className="text-blue-600 font-semibold">
               {service.currency} {service.price.toLocaleString('es-AR')}
             </p>
-            {/* Importante: usar imagePath */}
+            {/* RENDERIZADO DE IMAGEN:
+              Asegúrate de que las fotos de aires acondicionados tengan una relación de aspecto 
+              similar para que la cuadrícula se vea simétrica.
+            */}
             <Image src={service.imagePath} alt={service.title} className="w-full h-auto" width={50} height={50} />
           </div>
         ))}

@@ -1,19 +1,38 @@
-
+/* CONFIGURACIÓN DEL GENERADOR
+   Este bloque le dice a Prisma que genere el cliente de JavaScript/TypeScript 
+   que utilizas en tu código (el famoso 'prisma.service.findMany').
+*/
 generator client {
   provider        = "prisma-client-js"
+  // Aquí es donde Prisma "magicamente" crea los métodos basados en tus modelos.
 }
 
+/* CONFIGURACIÓN DE LA FUENTE DE DATOS
+   Define que vas a usar PostgreSQL (en tu caso, hospedado en Neon).
+   Nota: La URL se maneja a través de variables de entorno para mayor seguridad.
+*/
 datasource db {
   provider = "postgresql"
   // url      = env("DATABASE_URL")
 }
 
+/* MODELO DE CATEGORÍAS (Padre)
+   Representa las secciones de tu web: Electricidad, Refrigeración, Mantenimiento.
+*/
 model Category {
   id       Int       @id @default(autoincrement())
   name     String    @unique
+
+/* RELACIÓN INVERSA:
+     Un array de servicios. Esto permite que desde una categoría 
+     puedas acceder a todos sus servicios asociados.
+  */
   services Service[]
 }
 
+  /* MODELO DE SERVICIOS (Hijo)
+   Representa cada trabajo específico que ofreces (ej: "Instalación de Aire").
+*/
 model Service {
   id          Int      @id @default(autoincrement())
   title       String
@@ -21,7 +40,14 @@ model Service {
   imagePath    String 
   price       Float
   currency    String
+  /* CAMPO POR DEFECTO:
+     'minUnits' define el mínimo para contratar. Por defecto es 1.
+  */
   minUnits    Int      @default(1)
+  /* CLAVE FORÁNEA (Foreign Key):
+     categoryId: El número que vincula este servicio con una categoría.
+     category: La relación técnica que le explica a Prisma cómo unirse a 'Category'.
+  */
   categoryId  Int
   category    Category @relation(fields: [categoryId], references: [id])
 }

@@ -1,7 +1,17 @@
+/* SINTAXIS: Next.js / React (Directive)
+   ESTE BLOQUE: Define que el componente se renderiza en el cliente para manejar interacciones y lógica de UI.
+*/
 "use client";
+
+/* SINTAXIS: JavaScript (ES6 Modules)
+   ESTE BLOQUE: Importación de utilidades de navegación y componentes de iconos personalizados.
+*/
 import Link from "next/link";
 import { LogoRedecoToia, IconHorario, IconEmail, IconPhone } from "../ui/Icons";
 
+/* SINTAXIS: TypeScript (Interface)
+   ESTE BLOQUE: Define la estructura de datos para la información de contacto, asegurando que cada objeto tenga las propiedades correctas (tipado estricto).
+*/
 interface ContactInfo {
   id: string;
   icon: React.ReactNode;
@@ -11,6 +21,9 @@ interface ContactInfo {
   href?: string;
 }
 
+/* SINTAXIS: TypeScript (Typed Array)
+   ESTE BLOQUE: Datos fuente para la barra superior. Centraliza la información para facilitar cambios en horarios o contactos.
+*/
 const CONTACT_INFO: ContactInfo[] = [
   {
     id: "schedule",
@@ -37,15 +50,20 @@ const CONTACT_INFO: ContactInfo[] = [
   },
 ];
 
+/* SINTAXIS: React Functional Component (Topbar)
+   ESTE BLOQUE: Componente contenedor que renderiza el Logo y mapea los ítems de contacto en un diseño responsivo.
+*/
 export default function Topbar() {
   return (
-    <div className="w-full bg-[#091242] py-6 font-rubik">
+    <div className="w-full bg-[#091242] py-6">
       <div className="mx-auto flex w-full max-w-300 flex-col items-center justify-between gap-6 px-6 lg:flex-row lg:gap-0">
         
+        {/* Logo con link a Inicio y efectos de escala al interactuar */}
         <Link href="/" className="transition-transform hover:scale-105 active:scale-95">
           <LogoRedecoToia />
         </Link>
 
+        {/* Contenedor de items: Mapea el array CONTACT_INFO pasando todas las propiedades (spread operator) */}
         <div className="flex flex-wrap justify-center gap-8 lg:flex-nowrap">
           {CONTACT_INFO.map((item) => (
             <ContactItem key={item.id} {...item} />
@@ -56,19 +74,28 @@ export default function Topbar() {
   );
 }
 
+/* SINTAXIS: React Functional Component (Internal / Child)
+   ESTE BLOQUE: Componente especializado en renderizar cada ítem de contacto con lógica visual dinámica.
+*/
 function ContactItem({ icon, label, subLabel, href, type }: ContactInfo) {
-  // 1. Definimos las clases condicionales para el efecto HOVER
+  
+  /* SINTAXIS: JavaScript (Lógica de clases condicionales)
+     ESTE BLOQUE: Define constantes para aplicar estilos de Tailwind según si el ítem es clickeable (link) o meramente informativo (text).
+  */
   const isLink = type === "link";
   
-  // Clases para el contenedor principal (escala)
+  // Clases para el contenedor principal: Activa hover solo si es link
   const containerClasses = `group flex items-center gap-4 text-white transition-transform duration-300 ${isLink ? "hover:scale-105" : ""}`;
   
-  // Clases para el borde del círculo (solo si es link)
+  // Clases para el círculo del icono: Cambia el borde a dorado (#F6B426) en hover si es link
   const iconBoxClasses = `flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-[#273270] bg-[#111C55] transition-colors duration-300 ${isLink ? "group-hover:border-[#F6B426]" : ""}`;
   
-  // Clases para el texto (solo si es link)
+  // Clases para la tipografía: Aplica el color dorado en hover si es link
   const textClasses = `transition-colors duration-300 ${isLink ? "group-hover:text-[#F6B426]" : ""}`;
 
+  /* SINTAXIS: JSX Variable
+     ESTE BLOQUE: Almacena la estructura visual común del ítem para evitar repetición de código (DRY).
+  */
   const content = (
     <div className={containerClasses}>
       <div className={iconBoxClasses}>
@@ -82,10 +109,14 @@ function ContactItem({ icon, label, subLabel, href, type }: ContactInfo) {
     </div>
   );
 
+  /* SINTAXIS: JavaScript (Conditional Rendering)
+     ESTE BLOQUE: Determina si el componente devuelve un tag <a> (enlace externo) o un <div> (texto plano).
+  */
   if (isLink && href) {
     return (
       <a 
         href={href} 
+        // Lógica de seguridad para links de WhatsApp
         target={href.includes("wa.me") ? "_blank" : undefined}
         rel={href.includes("wa.me") ? "noopener noreferrer" : undefined}
         className="block"

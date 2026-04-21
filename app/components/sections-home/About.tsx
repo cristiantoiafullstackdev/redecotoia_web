@@ -1,35 +1,57 @@
+/* SINTAXIS: Next.js / React (Directive)
+   ESTE BLOQUE: Habilita el modo cliente para usar el Hook 'useState' y permitir la interactividad de las pestañas.
+*/
 "use client";
+
+/* SINTAXIS: JavaScript (ES6 Modules)
+   ESTE BLOQUE: Importación del componente optimizado de imágenes de Next.js y el Hook de estado de React.
+*/
 import Image from "next/image";
 import { useState } from "react";
 
+/* SINTAXIS: JavaScript (Objeto de Configuración)
+   ESTE BLOQUE: Diccionario de contenidos. Centraliza los textos de la sección para facilitar el mantenimiento y la lectura del código.
+*/
 const TABS_CONTENT = {
   enfoque: {
     title: "Nuestro enfoque",
-    text: "En RedecoToia, nos especializamos en transformar espacios a través de un mantenimiento integral de excelencia. Contamos con un equipo de técnicos certificados dedicados a la instalación y reparación de aires acondicionados y sistemas eléctricos residenciales e industriales. Nuestro compromiso es brindar una respuesta rápida y soluciones duraderas que superen las expectativas de calidad.",
+    text: "En RedecoToia, nos especializamos en transformar espacios a través de un mantenimiento integral de excelencia...",
   },
   mision: {
     title: "Misión",
-    text: "Nuestra misión es proporcionar soluciones integrales en climatización y electricidad que garanticen la seguridad y el confort de nuestros clientes. Nos enfocamos en la excelencia técnica y el uso de tecnologías eficientes para optimizar el consumo energético y prolongar la vida útil de cada equipo.",
+    text: "Nuestra misión es proporcionar soluciones integrales en climatización y electricidad que garanticen la seguridad...",
   },
   valores: {
     title: "Valores",
-    text: "Compromiso: Calidad garantizada en cada instalación y reparación. Transparencia: Presupuestos claros y asesoramiento honesto. Seguridad: Cumplimiento estricto de las normas eléctricas vigentes.",
+    text: "Compromiso: Calidad garantizada. Transparencia: Presupuestos claros. Seguridad: Cumplimiento de normas.",
   },
 };
 
+/* SINTAXIS: TypeScript (Type Inference)
+   ESTE BLOQUE: Define un tipo basado en las llaves del objeto TABS_CONTENT ('enfoque' | 'mision' | 'valores') para evitar errores de escritura.
+*/
 type TabType = keyof typeof TABS_CONTENT;
 
+/* SINTAXIS: React Functional Component (Sección Sobre Nosotros)
+   ESTE BLOQUE: Componente principal que gestiona la presentación de la trayectoria y filosofía de la empresa.
+*/
 export default function About() {
+  
+  /* SINTAXIS: React Hook (useState con Generic de TypeScript)
+     ESTE BLOQUE: Estado para controlar cuál pestaña está seleccionada actualmente. Por defecto inicia en 'enfoque'.
+  */
   const [activeTab, setActiveTab] = useState<TabType>("enfoque");
 
   return (
     <section id="about" className="w-full bg-[#dbdbdb] py-24 px-6 font-rubik">
-      {/* Contenedor principal con altura sincronizada */}
+      
+      {/* Contenedor principal: Usa flex-col para móvil y flex-row para pantallas grandes (lg) */}
       <div className="mx-auto flex max-w-286 flex-col items-stretch justify-between gap-24 lg:flex-row">
         
-        {/* BLOQUE DE IMÁGENES */}
+        {/* BLOQUE DE IMÁGENES: Composición con posición relativa para permitir el solapamiento */}
         <div className="relative w-full lg:w-1/2 min-h-100">
-          {/* Imagen Principal */}
+          
+          {/* Imagen Principal: Ocupa el contenedor base con efecto object-cover */}
           <div className="h-full w-full overflow-hidden">
             <Image
               src="/images/photo-about.png"
@@ -40,7 +62,7 @@ export default function About() {
             />
           </div>
 
-          {/* Imagen Pequeña con borde idéntico al fondo */}
+          {/* Imagen Secundaria: Flotante con posicionamiento absoluto y borde grueso que simula recorte */}
           <div className="absolute -bottom-12 -right-12 w-48 overflow-hidden border-18 border-[#dbdbdb] md:w-48">
             <Image
               src="/images/photo-about2.png"
@@ -52,10 +74,10 @@ export default function About() {
           </div>
         </div>
 
-        {/* BLOQUE DE CONTENIDO (Ajustado para igualar altura) */}
+        {/* BLOQUE DE CONTENIDO: Textos informativos y sistema de pestañas interactivo */}
         <div className="flex w-full flex-col justify-between lg:w-1/2 py-2">
           
-          {/* Encabezado */}
+          {/* Encabezado: Título con decoración de borde lateral y subtítulo principal */}
           <div>
             <h5 className="mb-4 inline-block text-xs font-bold tracking-wider text-[#1C1F35]">
               <span className="border-l-4 border-[#F6B426] bg-[#3A3C40]/20 px-4 py-1.5">
@@ -66,17 +88,19 @@ export default function About() {
               Nuestra trayectoria en <br /> confort y Energía
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-[#1C1F35]">
-              Implementamos soluciones técnicas de alta precisión para garantizar que cada sistema eléctrico y de climatización funcione al máximo rendimiento, priorizando siempre la seguridad y la eficiencia energética de nuestros clientes.
+              Implementamos soluciones técnicas de alta precisión para garantizar que cada sistema eléctrico y de climatización funcione al máximo rendimiento...
             </p>
           </div>
 
-          {/* SECCIÓN DE TABS (Acciones y animaciones originales mantenidas) */}
+          {/* SECCIÓN DE TABS: Navegación entre Enfoque, Misión y Valores */}
           <div className="mt-8">
             <div className="bg-white flex w-full p-1 shadow-sm mb-4">
+              {/* Iteración sobre las llaves del objeto para generar los botones dinámicamente */}
               {(Object.keys(TABS_CONTENT) as TabType[]).map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
+                  /* Estilos Dinámicos: Cambia a amarillo (#F6B426) si la pestaña es la activa */
                   className={`flex-1 py-2 text-[#1C1F35] font-semibold transition-colors duration-300 ${
                     activeTab === tab
                       ? "bg-[#F6B426]"
@@ -88,9 +112,10 @@ export default function About() {
               ))}
             </div>
 
-            {/* Texto del Tab con altura controlada */}
+            {/* Contenedor de Texto: Posee una altura mínima para evitar saltos bruscos al cambiar de contenido */}
             <div className="min-h-25">
               <p className="text-[#1C1F35] text-xs leading-relaxed animate-in fade-in slide-in-from-bottom-1 duration-500">
+                {/* Muestra el texto correspondiente al estado activeTab */}
                 {TABS_CONTENT[activeTab].text}
               </p>
             </div>

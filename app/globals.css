@@ -1,14 +1,32 @@
+/* SINTAXIS: Tailwind CSS v4
+   ESTE BLOQUE: Importa todas las utilidades de Tailwind. 
+   Es el motor que permite usar clases como 'flex', 'grid' o 'text-3xl' en tus componentes.
+*/
 @import "tailwindcss";
 
+/* SINTAXIS: CSS Nativo
+   ESTE BLOQUE: Aplica un desplazamiento suave cuando el usuario hace clic en un enlace 
+   que lleva a otra sección de la misma página (ej: del menú a "Contacto"). 
+   En lugar de saltar de golpe, la página "desliza" elegantemente.
+*/
 html {
   scroll-behavior: smooth;
 }
 
+/* SINTAXIS: Pseudo-clases de Webkit (El "Hack" del Autofill)
+   PROBLEMA: Por defecto, cuando el navegador (Chrome, Edge, etc.) autocompleta un campo 
+   (como el email), le pone un fondo amarillo o celeste muy feo que rompe tu diseño oscuro.
+   
+   SOLUCIÓN: Estos selectores fuerzan al navegador a usar tus colores corporativos 
+   incluso cuando el campo está autocompletado.
+*/
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0px 1000px #091242 inset !important; /* tu color de fondo */
-  -webkit-text-fill-color: #fff !important; /* color del texto */
+  /* Crea una sombra interna gigante del color de tu fondo (#091242) para tapar el color del navegador */
+  -webkit-box-shadow: 0 0 0px 1000px #091242 inset !important; 
+  /* Fuerza a que el texto siempre sea blanco */
+  -webkit-text-fill-color: #fff !important; 
 }

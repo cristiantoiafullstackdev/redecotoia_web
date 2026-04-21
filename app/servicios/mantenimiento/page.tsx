@@ -1,3 +1,8 @@
+/* SINTAXIS: Prisma Query (Cambio de categoría)
+   ESTE BLOQUE: Aquí filtras por 'categoryId: 3'. 
+   Esto es lo que separa lógicamente los servicios de Electricidad de los de Mantenimiento 
+   en tu base de datos relacional.
+*/
 import prisma from "@/lib/prisma";
 import Image from "next/image";
 
@@ -14,6 +19,10 @@ const services = await prisma.service.findMany({
   },
 });
   
+/* ESTRUCTURA: Grid con Imágenes
+   ESTE BLOQUE: A diferencia de la versión anterior, aquí incluyes el componente <Image />.
+   Esto hace que la tarjeta sea mucho más visual y profesional.
+*/
 
   return (
     <div className="mt-40 px-54 py-8 w-full min-h-screen">
@@ -26,7 +35,10 @@ const services = await prisma.service.findMany({
             <p className="text-blue-600 font-semibold">
               {service.currency} {service.price.toLocaleString('es-AR')}
             </p>
-            {/* Importante: usar imagePath */}
+            {/* SINTAXIS: Next.js Image Component
+                ESTE BLOQUE: 'service.imagePath' debe ser una URL válida o una ruta en /public.
+                El uso de 'w-full h-auto' asegura que la imagen ocupe todo el ancho de su columna.
+            */}
             <Image src={service.imagePath} alt={service.title} className="w-full h-auto" width={50} height={50} />
           </div>
         ))}
