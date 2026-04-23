@@ -17,7 +17,7 @@ export default function Hero() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section id="hero" className="relative mt-26 w-full overflow-hidden bg-[#3A3C40]">
+    <section id="hero" className="relative top-40 lg:top-26 w-full overflow-hidden bg-[#3A3C40]">
       
       {/* 1. CONTENEDOR DE IMAGEN: Capa base de la sección.
           SINTAXIS: JSX + Tailwind (Posicionamiento Relativo)

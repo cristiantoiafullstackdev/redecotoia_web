@@ -1,6 +1,6 @@
 [
   {
-    "title": "Acometida monofásica doble aislación hasta 10 kW",
+    "title": "Acometida monofásica",
     "description":"Instalación pilar completo con caño, gabinete, tablero principal y cableado normalizado  para viviendas unifamiliares.",
     "imagePath": "",
     "price": 200000,
@@ -9,7 +9,7 @@
     "categoryId": 1
   },
   {
-    "title": "Acometida trifásica doble aislación hasta 10 kW",
+    "title": "Acometida trifásica",
     "description": "Instalación pilar completo con caño, gabinete, tablero principal y cableado normalizado  para viviendas unifamiliares.",
     "imagePath": "",
     "price": 280000,
@@ -18,7 +18,7 @@
     "categoryId": 1
   },
   {
-    "title": "Boca completa de electricidad (de 1 a 10 unidades)",
+    "title": "Boca completa de electricidad recidencial(tomacorrientes, luces y artefactos)",
     "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
     "imagePath": "",
     "price": 75000,
@@ -27,56 +27,20 @@
     "categoryId": 1
   },
   {
-    "title": "Boca completa de electricidad (de 11 a 20 unidades)",
-    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
+    "title": "Boca completa de electricidad en obras",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos en obras nuevas o reformas.",
     "imagePath": "",
-    "price": 70000,
+    "price": 50000,
     "minUnits": 11,
     "currency": "ARS",
     "categoryId": 1
   },
   {
-    "title": "Boca completa de electricidad (de 21 a 50 unidades)",
+    "title": "Boca completa de electricidad por cantidad (mas de 100 unidades)",
     "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
     "imagePath": "",
-    "price": 65000,
+    "price": 45000,
     "minUnits": 21,
-    "currency": "ARS",
-    "categoryId": 1
-  },
-  {
-    "title": "Boca completa de electricidad (de 51 a 100 unidades)",
-    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
-    "imagePath": "",
-    "price": 60000,
-    "minUnits": 51,
-    "currency": "ARS",
-    "categoryId": 1
-  },
-  {
-    "title": "Boca completa en obras (de 1 a 50 unidades)",
-    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos en obras nuevas o reformas.",
-    "imagePath": "",
-    "price": 50000,
-    "minUnits": 10,
-    "currency": "ARS",
-    "categoryId": 1
-  },
-  {
-    "title": "Boca completa en obras (de 51 a 100 unidades)",
-    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos en obras nuevas o reformas.",
-    "imagePath": "",
-    "price": 40000,
-    "minUnits": 51,
-    "currency": "ARS",
-    "categoryId": 1
-  },
-  {
-    "title": "Boca completa en obras (de 101 a 200 unidades)",
-    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos en obras nuevas o reformas.",
-    "imagePath": "",
-    "price": 35000,
-    "minUnits": 101,
     "currency": "ARS",
     "categoryId": 1
   },
@@ -90,7 +54,7 @@
     "categoryId": 1
   },
   {
-    "title": "Cableado por boca",
+    "title": "Cableado por boca (tomacorrientes, luces y artefactos)",
     "description": "Instalación de cableado por boca con materiales normalizados. Ideal para reformas, ampliaciones o mejoras de instalaciones eléctricas existentes.",
     "imagePath": "",
     "price": 30000,
@@ -99,7 +63,7 @@
     "categoryId": 1
   },
    {
-    "title": "Recableado por boca",
+    "title": "Recableado por boca (tomacorrientes, luces y artefactos)",
     "description": "Reemplazo de cableado existente con materiales normalizados. Ideal para reformas, ampliaciones o mejoras de instalaciones eléctricas existentes.",
     "imagePath": "",
     "price": 40000,
