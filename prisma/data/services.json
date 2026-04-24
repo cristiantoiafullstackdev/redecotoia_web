@@ -18,7 +18,7 @@
     "categoryId": 1
   },
   {
-    "title": "Boca completa de electricidad recidencial(tomacorrientes, luces y artefactos)",
+    "title": "Boca completa de electricidad (tomacorrientes, luces)",
     "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
     "imagePath": "",
     "price": 75000,
@@ -36,8 +36,8 @@
     "categoryId": 1
   },
   {
-    "title": "Boca completa de electricidad por cantidad (mas de 100 unidades)",
-    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos.",
+    "title": "Boca completa de electricidad por cantidad",
+    "description": "Instalación de boca completa con caño, caja, cableado normalizado para tomas, luces y artefactos, por cantidad mayor a 100 unidades.",
     "imagePath": "",
     "price": 45000,
     "minUnits": 21,
@@ -145,7 +145,7 @@
   },
   {
     "title": "Instalacion Luces de Emergencia",
-    "description": "Instalación de luces de emergencia con cableado normalizado. Ideal para garantizar la seguridad en caso de cortes de energía en viviendas, oficinas, comercios y pequeñas industrias.",
+    "description": "Instalación de luces de emergencia con cableado normalizado. Ideal para garantizar la seguridad en caso de cortes de energía en viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 50000,
     "minUnits": 2,
@@ -154,7 +154,7 @@
   },
   {
     "title": "Artefactos Eléctricos - Extraxtores de aire de Cocinas",
-    "description": "Instalación de extractores de aire para cocinas con cableado normalizado. Ideal para mejorar la ventilación y reducir la humedad en cocinas residenciales y comerciales.",
+    "description": "Instalación de extractores de aire para cocinas con cableado normalizado. Ideal para mejorar la ventilación y reducir la humedad en cocinas.",
     "imagePath": "",
     "price": 200000,
     "minUnits": 1,
@@ -163,7 +163,7 @@
   },
   {
     "title": "Artefactos Eléctricos - Ventilador de techo sin luces",
-    "description": "Instalación de ventiladores de techo sin luces con cableado normalizado. Ideal para mejorar la ventilación en viviendas, oficinas y comercios.",
+    "description": "Instalación de ventiladores de techo sin luces con cableado normalizado. Ideal para mejorar la ventilación en ambientes varios.",
     "imagePath": "",
     "price": 100000,
     "minUnits": 1,
@@ -172,7 +172,7 @@
   },
   {
     "title": "Artefactos Eléctricos - Ventilador de techo con luces",
-    "description": "Instalación de ventiladores de techo con luces con cableado normalizado. Ideal para mejorar la ventilación en viviendas, oficinas y comercios.",
+    "description": "Instalación de ventiladores de techo con luces con cableado normalizado. Ideal para mejorar la ventilación en ambientes varios.",
     "imagePath": "",
     "price": 120000,
     "minUnits": 1,
@@ -181,7 +181,7 @@
   },
   {
     "title": "Emergencias - de Lunes a Viernes de 8 a 18 hs",
-    "description": "Servicio de atención de emergencias eléctricas durante días hábiles en horario comercial. Ideal para resolver problemas eléctricos urgentes en viviendas, oficinas y comercios.",
+    "description": "Servicio de atención de emergencias eléctricas durante días hábiles en horario comercial. Ideal para resolver problemas eléctricos urgentes.",
     "imagePath": "",
     "price": 80000,
     "minUnits": 1,
@@ -190,7 +190,7 @@
   },
   {
     "title": "Puesta a Tierra",
-    "description": "Instalación de sistemas de puesta a tierra con materiales normalizados. Ideal para garantizar la seguridad eléctrica en viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de sistemas de puesta a tierra con materiales normalizados. Ideal para garantizar la seguridad eléctrica en viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 75000,
     "minUnits": 1,
@@ -199,7 +199,7 @@
   },
   {
     "title": "Tableros Eléctricos - Tablero Principal",
-    "description": "Instalación de tableros eléctricos principales con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de tableros eléctricos principales con materiales normalizados. Ideal para viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 75000,
     "minUnits": 1,
@@ -208,7 +208,7 @@
   },
   {
     "title": "Tableros Eléctricos - Tablero Seccional hasta 4 polos",
-    "description": "Instalación de tableros eléctricos seccionales con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de tableros eléctricos seccionales con materiales normalizados. Ideal para viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 100000,
     "minUnits": 1,
@@ -217,7 +217,7 @@
   },
   {
     "title": "Tableros Eléctricos - Tablero Seccional hasta 8 polos",
-    "description": "Instalación de tableros eléctricos seccionales con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de tableros eléctricos seccionales con materiales normalizados. Ideal para viviendas, oficinas y comercios",
     "imagePath": "",
     "price": 160000,
     "minUnits": 1,
@@ -226,7 +226,7 @@
   },
   {
     "title": "Instalación Aire Acondicionado Split hasta 3499fg",
-    "description": "Instalación de aire acondicionado split hasta 3499fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de aire acondicionado split hasta 3499fg con materiales normalizados. Ideal para viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 120000,
     "minUnits": 1,
@@ -235,7 +235,7 @@
   },
   {
     "title": "Instalación Aire Acondicionado Split hasta 5499fg",
-    "description": "Instalación de aire acondicionado split hasta 5499fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de aire acondicionado split hasta 5499fg con materiales normalizados. Ideal para viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 150000,
     "minUnits": 1,
@@ -244,7 +244,7 @@
   },
   {
     "title": "Instalación Aire Acondicionado Split hasta 6299fg",
-    "description": "Instalación de aire acondicionado split hasta 6299fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de aire acondicionado split hasta 6299fg con materiales normalizados. Ideal para viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 180000,
     "minUnits": 1,
@@ -253,7 +253,7 @@
   },
   {
     "title": "Instalación Aire Acondicionado Split hasta 7999fg",
-    "description": "Instalación de aire acondicionado split hasta 7999fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de aire acondicionado split hasta 7999fg con materiales normalizados. Ideal para viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 210000,
     "minUnits": 1,
@@ -262,7 +262,7 @@
   },
   {
     "title": "Instalación Aire Acondicionado Split hasta 8999fg",
-    "description": "Instalación de aire acondicionado split hasta 8999fg con materiales normalizados. Ideal para viviendas, oficinas, comercios e industrias.",
+    "description": "Instalación de aire acondicionado split hasta 8999fg con materiales normalizados. Ideal para viviendas, oficinas y comercios.",
     "imagePath": "",
     "price": 250000,
     "minUnits": 1,
@@ -271,7 +271,7 @@
   },
   {
     "title": "Preinstalación simple de Aires Acondicionado",
-    "description": "Preinstalación simple de aire acondicionado con materiales normalizados. Ideal para viviendas, oficinas, comercios y departamentos que planean instalar aire acondicionado en el futuro.",
+    "description": "Preinstalación simple de aire acondicionado con materiales normalizados. Ideal para viviendas, oficinas, comercios y departamentos.",
     "imagePath": "",
     "price": 150000,
     "minUnits": 1,
@@ -280,7 +280,7 @@
   },
   {
     "title": "Preinstalación compleja de Aires Acondicionado",
-    "description": "Preinstalación compleja de aire acondicionado con materiales normalizados. Ideal para viviendas, oficinas, comercios y departamentos que planean instalar aire acondicionado en el futuro.",
+    "description": "Preinstalación compleja de aire acondicionado con materiales normalizados. Ideal para viviendas, oficinas, comercios y departamentos.",
     "imagePath": "",
     "price": 250000,
     "minUnits": 1,
@@ -298,7 +298,7 @@
   },
   {
     "title": "Desinstalación de Aires Acondicionados hasta 5499fg",
-    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "description": "Desinstalación de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo.",
     "imagePath": "",
     "price": 90000,
     "minUnits": 1,
@@ -307,7 +307,7 @@
   },
   {
     "title": "Desinstalación de Aires Acondicionados hasta 6299fg",
-    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "description": "Desinstalación de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo.",
     "imagePath": "",
     "price": 120000,
     "minUnits": 1,
@@ -316,7 +316,7 @@
   },
   {
     "title": "Desinstalación de Aires Acondicionados hasta 7999fg",
-    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "description": "Desinstalación de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo.",
     "imagePath": "",
     "price": 150000,
     "minUnits": 1,
@@ -325,7 +325,7 @@
   },
   {
     "title": "Desinstalación de Aires Acondicionados hasta 8999fg",
-    "description": "Desinstalación de aire acondicionado split. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo de aire acondicionado.",
+    "description": "Desinstalación de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan retirar un equipo.",
     "imagePath": "",
     "price": 200000,
     "minUnits": 1,
@@ -343,7 +343,7 @@
   },
   {
     "title": "Recargas de Aires Acondicionados",
-    "description": "Limpieza profunda de filtros, turbinas, evaporadores y condensadores para mejorar el rendimiento y la higiene.",
+    "description": "Recarga de gas refrigerante para aire acondicionado. Ideal para mejorar el rendimiento y la eficiencia energética de los equipos.",
     "imagePath": "",
     "price": 90000,
     "minUnits": 1,
@@ -352,7 +352,7 @@
   },
   {
     "title": " Recambio de capacitor de Aires Acondicionados",
-    "description": "Limpieza profunda de filtros, turbinas, evaporadores y condensadores para mejorar el rendimiento y la higiene.",
+    "description": "Reemplazo de capacitor de aire acondicionado. Ideal para mejorar el rendimiento y la eficiencia energética de los equipos.",
     "imagePath": "",
     "price": 90000,
     "minUnits": 1,
@@ -361,7 +361,7 @@
   },
   {
     "title": "Mantenimiento Básico",
-    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 1 visita quinsenal + 1 urgencia al mes. Hasta 4hs",
+    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios y pequeñas industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 1 visita quinsenal. Hasta 4hs",
     "imagePath": "",
     "price": 160000,
     "minUnits": 1,
@@ -370,7 +370,7 @@
   },
   {
     "title": "Mantenimiento Standard",
-    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 1 visita semanal + 1 urgencia al mes. Hasta 4hs",
+    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios y pequeñas industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 1 visita semanal, Hasta 4hs",
     "imagePath": "",
     "price": 240000,
     "minUnits": 1,
@@ -379,9 +379,9 @@
   },
   {
     "title": "Mantenimiento Premium",
-    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios e industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 2 visitas semanales + 1 urgencia al mes. Hasta 4hs",
+    "description": "Mantenimiento de instalaciones electricas y equipos de aire acondicionado. Ideal para viviendas, oficinas, comercios y pequeñas industrias que necesitan mantener sus sistemas en buen estado. Incluye limpieza de filtros, revisión de conexiones, pruebas de funcionamiento, reparaciones simples y recomendaciones para mejorar la eficiencia energética. 2 visitas semanales, 1 urgencia mensual. Hasta 4hs",
     "imagePath": "",
-    "price": 360000,
+    "price": 480000,
     "minUnits": 1,
     "currency": "ARS",
     "categoryId": 3    

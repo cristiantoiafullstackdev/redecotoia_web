@@ -130,3 +130,69 @@ export const LogoRedecoToia = ({ className }: IconProps) => (
     <rect x="18.1304" y="18.0002" width="10" height="10" fill="#FFB82B"/>
   </svg>
 );
+
+// 10 bis. Solo el isotipo de logo  para mobile
+export const IsotipoRedecoToia = ({ className }: IconProps) => (
+  <svg 
+    width="34" 
+    height="34" 
+    viewBox="0 0 34 34" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg" 
+    className={className}
+  >
+    {/* Cuadrado superior izquierdo rotado */}
+    <rect 
+      y="7.8913" 
+      width="9.78261" 
+      height="9.78261" 
+      transform="rotate(-30 0 7.8913)" 
+      fill="#FFB82B"
+    />
+    {/* Cuadrado inferior izquierdo */}
+    <rect 
+      x="4.13043" 
+      y="18.0002" 
+      width="10" 
+      height="10" 
+      fill="#FFB82B"
+    />
+    {/* Cuadrado superior derecho */}
+    <rect 
+      x="18.1304" 
+      y="5.00019" 
+      width="10" 
+      height="10" 
+      fill="#FFB82B"
+    />
+    {/* Cuadrado inferior derecho */}
+    <rect 
+      x="18.1304" 
+      y="18.0002" 
+      width="10" 
+      height="10" 
+      fill="#FFB82B"
+    />
+  </svg>
+);
+
+// 11. IconMenu
+export const IconMenu = ({ className }: IconProps) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    className={className || "icon icon-tabler icons-tabler-outline icon-tabler-menu-2"}
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M4 6l16 0" />
+    <path d="M4 12l16 0" />
+    <path d="M4 18l16 0" />
+  </svg>
+);

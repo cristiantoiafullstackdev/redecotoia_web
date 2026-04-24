@@ -46,7 +46,7 @@ export default function About() {
     <section id="about" className="w-full bg-[#dbdbdb] py-24 px-6 font-rubik">
       
       {/* Contenedor principal: Usa flex-col para móvil y flex-row para pantallas grandes (lg) */}
-      <div className="mx-auto flex max-w-286 flex-col items-stretch justify-between gap-24 lg:flex-row">
+      <div className="mx-auto flex max-w-6xl px-8 flex-col items-stretch justify-between gap-24 lg:flex-row">
         
         {/* BLOQUE DE IMÁGENES: Composición con posición relativa para permitir el solapamiento */}
         <div className="relative w-full lg:w-1/2 min-h-100">

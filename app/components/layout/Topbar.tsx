@@ -7,7 +7,7 @@
    ESTE BLOQUE: Importación de utilidades de navegación y componentes de iconos personalizados.
 */
 import Link from "next/link";
-import { LogoRedecoToia, IconHorario, IconEmail, IconPhone } from "../ui/Icons";
+import { LogoRedecoToia, IconHorario, IconEmail, IconPhone, IsotipoRedecoToia } from "../ui/Icons";
 
 /* SINTAXIS: TypeScript (Interface)
    ESTE BLOQUE: Define la estructura de datos para la información de contacto, asegurando que cada objeto tenga las propiedades correctas (tipado estricto).
@@ -55,12 +55,15 @@ const CONTACT_INFO: ContactInfo[] = [
 */
 export default function Topbar() {
   return (
-    <div className="w-full bg-[#091242] py-6">
-      <div className="mx-auto flex w-full max-w-300 flex-col items-center justify-between gap-6 px-6 lg:flex-row lg:gap-0">
+    <div className="w-full py-6 bg-[#091242] z-50">
+      <div className="mx-auto flex lg:max-w-6xl lg:px-8 items-center justify-between">
         
         {/* Logo con link a Inicio y efectos de escala al interactuar */}
-        <Link href="/" className="transition-transform hover:scale-105 active:scale-95">
+        <Link href="/" className="transition-transform hover:scale-105 active:scale-95 hidden lg:block">
           <LogoRedecoToia />
+        </Link>
+         <Link href="/" className="transition-transform hover:scale-105 active:scale-95 block lg:hidden">
+          <IsotipoRedecoToia />
         </Link>
 
         {/* Contenedor de items: Mapea el array CONTACT_INFO pasando todas las propiedades (spread operator) */}

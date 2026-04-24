@@ -17,7 +17,7 @@ export default function Hero() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section id="hero" className="relative top-40 lg:top-26 w-full overflow-hidden bg-[#3A3C40]">
+    <section id="hero" className="relative mt-1 lg:top-26 w-full overflow-hidden bg-[#3A3C40]">
       
       {/* 1. CONTENEDOR DE IMAGEN: Capa base de la sección.
           SINTAXIS: JSX + Tailwind (Posicionamiento Relativo)
@@ -43,7 +43,7 @@ export default function Hero() {
           ESTE BLOQUE: Utiliza 'absolute inset-0' para ocupar todo el espacio del Hero y 'items-center' 
           para centrar el texto verticalmente sobre la imagen.
       */}
-      <div className="absolute inset-0 flex items-center">
+      <div className="absolute inset-0 left-4 2xl:left-8 flex items-center">
         <div className="mx-auto w-full max-w-360 px-6 text-white md:px-20 lg:px-40">
           
           {/* Etiqueta superior: Texto pequeño decorativo con borde lateral dorado */}
@@ -59,7 +59,7 @@ export default function Hero() {
           </h1>
 
           {/* Descripción: Texto secundario con opacidad para no competir visualmente con el título */}
-          <p className="mb-4 max-w-lg text-sm leading-relaxed text-gray-100 opacity-90 md:text-base">
+          <p className="mb-4 max-w-md text-sm leading-relaxed text-gray-100 opacity-90 md:text-base">
             ¿Necesitas mantenimiento preventivo o reparaciones urgentes? Garantizamos el confort de tu hogar y empresa...
           </p>
 

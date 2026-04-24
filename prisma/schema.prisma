@@ -35,11 +35,11 @@ model Category {
 */
 model Service {
   id          Int      @id @default(autoincrement())
-  title       String
+  title       String   @unique
   description String
   imagePath    String 
   price       Float
-  currency    String
+  currency    String   @default("ARS")
   /* CAMPO POR DEFECTO:
      'minUnits' define el mínimo para contratar. Por defecto es 1.
   */

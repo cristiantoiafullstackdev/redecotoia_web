@@ -65,7 +65,7 @@ export default async function MantenimientoPage() {
               <h2 className="text-2xl min-h-26 font-normal mb-2 text-[#1C1F35]">
                 {service.title}
               </h2>
-              <p className="text-[#1C1F35] min-h-30 mb-2">{service.description}</p>
+              <p className="text-[#1C1F35] min-h-80 mb-2">{service.description}</p>
               
               {/* FORMATEO DE MONEDA:
                   SINTAXIS: .toLocaleString('es-AR')

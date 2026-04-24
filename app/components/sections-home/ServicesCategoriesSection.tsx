@@ -33,8 +33,8 @@ const SERVICES = [
 */
 export default function ServicesCategoriesSection() {
   return (
-    <section id="services" className="w-full bg-[#DBDBDB] py-20 px-6">
-      <div className="max-w-286 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+    <section id="services" className="w-full mt-26 bg-[#DBDBDB] py-28">
+      <div className="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row gap-12 lg:gap-16">
         
         {/* BLOQUE DE TÍTULO: 
             SINTAXIS: JSX + Tailwind (Layout)
