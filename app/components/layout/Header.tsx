@@ -57,7 +57,7 @@ export default function Header() {
      ESTE BLOQUE: Estructura visual del componente.
   */
   return (
-    <header className="fixed w-full h-14 top-26 z-50 bg-[rgba(9,18,66,0.5)] backdrop-blur-md">
+    <header className="hidden md:block fixed w-full h-14 top-26 z-40 bg-[rgba(9,18,66,0.5)] backdrop-blur-md">
       <div className="lg:max-w-6xl h-full mx-auto flex items-center justify-between">
         
         {/* Navegación Principal: Mapeo de los enlaces definidos arriba */}
@@ -118,16 +118,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* WhatsApp Flotante: Usa variables de entorno para el número y posicionamiento fijo (fixed) */}
-      <a
-        href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed lg:mt-120 2xl:mt-160 lg:right-20 2xl:right-30 z-50 transition-transform hover:scale-110 active:scale-95 drop-shadow-md"
-        aria-label="WhatsApp Flotante"
-      >
-        <IconWhatsApp className="h-18 w-18 2xl:h-24 2xl:w-24" />
-      </a>
     </header>
   );
 }

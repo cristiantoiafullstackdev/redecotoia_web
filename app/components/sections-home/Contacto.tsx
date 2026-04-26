@@ -93,9 +93,9 @@ export default function Contacto() {
         </div>
 
         {/* Tarjetas de Información Rápida: Horarios, Email y WhatsApp con efectos hover */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12 mb-16">
+        <div className="flex flex-row justify-center items-center gap-12 mb-16">
           {/* Bloque Horario */}
-          <div className="flex items-center gap-4">
+          <div className="md:flex md:items-center gap-1 md:gap-4 hidden md:block">
             <div className="flex items-center justify-center w-14 h-14 bg-[#111C55] border-2 border-[#273270] rounded-full shrink-0">
               <IconHorario />
             </div>
@@ -107,7 +107,7 @@ export default function Contacto() {
             <div className="flex items-center justify-center w-14 h-14 bg-[#111C55] border-2 border-[#273270] rounded-full shrink-0 group-hover:border-[#F6B426] transition-colors">
               <IconEmail />
             </div>
-            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors">E-mail: <br /> toiacristiandaniel@gmail.com</p>
+            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors hidden md:block">E-mail: <br /> toiacristiandaniel@gmail.com</p>
           </a>
 
           {/* Link de WhatsApp */}
@@ -115,7 +115,7 @@ export default function Contacto() {
             <div className="flex items-center justify-center w-14 h-14 bg-[#111C55] border-2 border-[#273270] rounded-full shrink-0 group-hover:border-[#F6B426] transition-colors">
               <IconPhone />
             </div>
-            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors">Celular: <br /> (351) 593 0609</p>
+            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors hidden md:block">Celular: <br /> (351) 593 0609</p>
           </a>
         </div>
 

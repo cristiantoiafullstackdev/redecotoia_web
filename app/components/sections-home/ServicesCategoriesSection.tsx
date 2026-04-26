@@ -33,7 +33,7 @@ const SERVICES = [
 */
 export default function ServicesCategoriesSection() {
   return (
-    <section id="services" className="w-full mt-26 bg-[#DBDBDB] py-28">
+    <section id="services" className="w-full md:mt-26 bg-[#DBDBDB] py-28">
       <div className="max-w-6xl mx-auto px-8 flex flex-col lg:flex-row gap-12 lg:gap-16">
         
         {/* BLOQUE DE TÍTULO: 
@@ -73,10 +73,10 @@ export default function ServicesCategoriesSection() {
                     ESTE BLOQUE: Posee un borde lateral sutil y cambia el color del título al dorado (#F6B426) mediante la clase group-hover.
                 */}
                 <div className="pl-4 border-l border-[#1C1F35]/30">
-                  <h3 className="text-lg text-[#1C1F35] font-bold mb-2 group-hover:text-[#F6B426] transition-colors">
+                  <h3 className="text-lg text-[#1C1F35] font-bold mb-2 group-hover:scale-110 transition-transform">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-[#1C1F35]/80 leading-relaxed max-w-70">
+                  <p className="text-sm text-[#1C1F35]/80 leading-relaxed max-w-70 group-hover:scale-110 transition-transform">
                     {service.description}
                   </p>
                 </div>

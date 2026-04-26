@@ -17,7 +17,7 @@ export default function Hero() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section id="hero" className="relative mt-1 lg:top-26 w-full overflow-hidden bg-[#3A3C40]">
+    <section id="hero" className="relative mt-22 lg:mt-1 lg:top-26 w-full overflow-hidden bg-[#3A3C40]">
       
       {/* 1. CONTENEDOR DE IMAGEN: Capa base de la sección.
           SINTAXIS: JSX + Tailwind (Posicionamiento Relativo)
@@ -43,23 +43,23 @@ export default function Hero() {
           ESTE BLOQUE: Utiliza 'absolute inset-0' para ocupar todo el espacio del Hero y 'items-center' 
           para centrar el texto verticalmente sobre la imagen.
       */}
-      <div className="absolute inset-0 left-4 2xl:left-8 flex items-center">
-        <div className="mx-auto w-full max-w-360 px-6 text-white md:px-20 lg:px-40">
+      <div className="absolute inset-0 -left-28 md:left-4 2xl:left-8 flex items-center">
+        <div className="mx-auto max-w-90 lg:w-full lg:max-w-360 px-6 text-white md:px-20 lg:px-40">
           
           {/* Etiqueta superior: Texto pequeño decorativo con borde lateral dorado */}
-          <p className="mb-2 text-xs">
+          <p className="md:mb-2 text-xs">
             <span className="bg-[#3A3C40]/70 border-l-3 border-[#F6B426] px-4 py-1 font-medium tracking-wide">
               Soluciones Integrales de Climatización y Energía.
             </span>
           </p>
 
           {/* Título Principal (H1): Definido con tamaños responsivos (text-2xl a text-5xl) */}
-          <h1 className="mb-2 max-w-xl text-2xl font-bold leading-tight md:text-4xl lg:text-5xl">
+          <h1 className="md:mb-2 max-w-xl text-lg lg:text-2xl font-bold leading-tight md:text-4xl lg:text-5xl">
             Servicios de Electricidad y Refrigeración en Córdoba
           </h1>
 
           {/* Descripción: Texto secundario con opacidad para no competir visualmente con el título */}
-          <p className="mb-4 max-w-md text-sm leading-relaxed text-gray-100 opacity-90 md:text-base">
+          <p className="md:mb-4 max-w-md text-xs lg:text-sm leading-relaxed text-gray-100 opacity-90 md:text-base">
             ¿Necesitas mantenimiento preventivo o reparaciones urgentes? Garantizamos el confort de tu hogar y empresa...
           </p>
 
@@ -72,9 +72,9 @@ export default function Hero() {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-block overflow-hidden bg-[#F6B426] px-12 py-4 font-bold text-[#3A3C40] transition-all"
+            className="group relative inline-block overflow-hidden bg-[#F6B426] px-8 py-2 md:px-12 md:py-4 font-semibold md:font-bold text-[#3A3C40] transition-all"
           >
-            <span className="relative my-auto z-10">Solicitar presupuesto técnico</span>
+            <span className="relative my-auto z-10">Solicitar presupuesto</span>
             
             {/* Efecto decorativo en hover: Cambia su tamaño de w-8 a w-24 */}
             <span className="absolute bottom-0 right-0 h-8 w-8 rounded-tl-full bg-white transition-all duration-300 ease-out group-hover:h-24 group-hover:w-24" />
