@@ -14,20 +14,19 @@ export default function Hero() {
   */
   
   return (
-    <section id="hero" className="relative mt-22 lg:mt-1 lg:top-26 w-full overflow-hidden bg-[#3A3C40]">
+    <section id="hero" className="relative mt-20 lg:mt-1 lg:top-26 w-full min-h-70 overflow-hidden bg-[#3A3C40]">
       
       {/* 1. CONTENEDOR DE IMAGEN: Capa base de la sección.
           SINTAXIS: JSX + Tailwind (Posicionamiento Relativo)
           ESTE BLOQUE: Renderiza la imagen principal. El atributo 'priority' indica a Next.js que cargue 
           esta imagen primero por estar por encima del pliegue (LCP).
       */}
-      <div className="relative h-auto w-full">
+      <div className="relative w-full h-full min-h-100 sm:min-h-125 lg:min-h-175">
         <Image
           src="/images/photo-hero.png"
           alt="Climatización Redeco Toia"
-          width={1920}
-          height={600}
-          className="block h-auto w-full object-cover"
+          fill
+          className="object-cover object-[center_top] sm:object-center"
           priority
         />
         
@@ -40,24 +39,24 @@ export default function Hero() {
           ESTE BLOQUE: Utiliza 'absolute inset-0' para ocupar todo el espacio del Hero y 'items-center' 
           para centrar el texto verticalmente sobre la imagen.
       */}
-      <div className="absolute inset-0 -left-28 md:left-4 2xl:left-8 flex items-center">
-        <div className="mx-auto max-w-90 lg:w-full lg:max-w-360 px-6 text-white md:px-20 lg:px-40">
+      <div className="absolute max-w-90 inset-0 flex items-center ml-8 md:ml-34 xl:ml-48 2xl:ml-108">
+        <div className="text-white">
           
           {/* Etiqueta superior: Texto pequeño decorativo con borde lateral dorado */}
-          <p className="md:mb-2 text-xs">
-            <span className="bg-[#3A3C40]/70 border-l-3 border-[#F6B426] px-4 py-1 font-medium tracking-wide">
-              Soluciones Integrales de Climatización y Energía.
+          <p className="mb-1 text-xs md:text-sm lg:text-md">
+            <span className="bg-[#3A3C40]/70 border-l-3 border-[#F6B426] px-4 py-1 font-normal tracking-wide">
+              Técnicos matriculados y habilitados (ERSEP).
             </span>
           </p>
 
           {/* Título Principal (H1): Definido con tamaños responsivos (text-2xl a text-5xl) */}
-          <h1 className="md:mb-2 max-w-xl text-lg font-bold leading-tight md:text-4xl lg:text-5xl">
+          <h1 className="mb-1 max-w-140 text-xl md:text-2xl lg:text-4xl font-bold leading-tight">
             Servicios de Electricidad y Refrigeración en Córdoba
           </h1>
 
           {/* Descripción: Texto secundario con opacidad para no competir visualmente con el título */}
-          <p className="md:mb-4 max-w-md text-xs lg:text-sm leading-relaxed text-gray-100 opacity-90 md:text-base">
-            ¿Necesitas mantenimiento preventivo o reparaciones urgentes? Garantizamos el confort de tu hogar y empresa...
+          <p className="mb-2 max-w-140 text-xs md:text-sm lg:text-md leading-relaxed text-gray-100 opacity-90">
+            ¿Necesitas mantenimiento preventivo o reparaciones? Garantizamos el confort de tu hogar y empresa.
           </p>
 
           {/* Botón de Acción (CTA): 
