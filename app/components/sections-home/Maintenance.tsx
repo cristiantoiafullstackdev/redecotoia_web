@@ -25,7 +25,7 @@ const PLANS: PricingPlan[] = [
     name: "Plan Basic",
     description: "(Ideal para mantenimiento esencial)",
     price: "$120mil",
-    features: ["Electricidad", "Refrigeración", "2 Visitas al mes (hasta 3hs)", "1 urgencia (hasta 3hs)"],
+    features: ["Electricidad", "Refrigeración", "2 Visitas al mes (hasta 3hs)", "1 urgencia (50% desc.)"],
     whatsappMessage: process.env.NEXT_PUBLIC_ELEGIR_PLAN_BASIC_MESSAGE || "",
   },
   {
@@ -34,7 +34,7 @@ const PLANS: PricingPlan[] = [
     description: "(La opción más elegida)",
     price: "$240mil",
     isFeatured: true, // Propiedad clave para cambiar el estilo visual
-    features: ["Electricidad", "Refrigeración", "4 Visitas al mes (hasta 3hs)", "1 urgencia (hasta 3hs)"],
+    features: ["Electricidad", "Refrigeración", "4 Visitas al mes (hasta 3hs)", "1 urgencia (50% desc.)"],
     whatsappMessage: process.env.NEXT_PUBLIC_ELEGIR_PLAN_STANDARD_MESSAGE || "",
   },
   {

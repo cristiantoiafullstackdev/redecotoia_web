@@ -4,6 +4,7 @@ import { DropDownMenu } from "../ui/DropDownMenu";
 import { LogoRedecoToia, IsotipoRedecoToia, IconWhatsApp } from "../ui/Icons";
 
 export default function Topbar() {
+  
   return (
     <div className="w-full py-6 bg-[#091242] z-50">
       <div className="mx-auto flex lg:max-w-6xl px-8 items-center justify-between">
@@ -19,7 +20,7 @@ export default function Topbar() {
       
       {/* WhatsApp Flotante: Usa variables de entorno para el número y posicionamiento fijo (fixed) */}
       <a
-        href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+        href={`https://wa.me//5493515930609?text=${process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed lg:mt-100 2xl:mt-150 lg:right-12 2xl:right-20 z-50 transition-transform hover:scale-110 active:scale-95 drop-shadow-md hidden lg:block"

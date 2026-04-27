@@ -30,7 +30,7 @@ const CONTACT_INFO: ContactInfoProps[] = [
     icon: <IconPhone />,
     label: "Celular:",
     subLabel: "(351) 593 0609",
-    href: "https://wa.me/5493515930609",
+    href: `https://wa.me/5493515930609?text=${process.env.NEXT_PUBLIC_CELULAR_MESSAGE}`,
     type: "link",
   },
 ];

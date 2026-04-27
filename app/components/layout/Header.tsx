@@ -7,7 +7,7 @@
    ESTE BLOQUE: Importación de librerías de React, componentes de navegación de Next.js y recursos visuales (iconos).
 */
 import Link from "next/link";
-import { IconInstagram, IconWhatsApp, IconWrapper } from "../ui/Icons";
+import { IconInstagram, IconWrapper } from "../ui/Icons";
 import { useState, useEffect } from "react";
 
 /* SINTAXIS: JavaScript (Arrays de Objetos)

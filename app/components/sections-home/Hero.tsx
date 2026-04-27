@@ -12,10 +12,7 @@ export default function Hero() {
      ESTE BLOQUE: Lógica para construir la URL de WhatsApp. Utiliza variables de entorno (process.env) para 
      mantener la seguridad de los datos y 'encodeURIComponent' para formatear correctamente el mensaje.
   */
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER;
-  const whatsappMessage = encodeURIComponent(process.env.NEXT_PUBLIC_HABLEMOS_MESSAGE || '');
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-
+  
   return (
     <section id="hero" className="relative mt-22 lg:mt-1 lg:top-26 w-full overflow-hidden bg-[#3A3C40]">
       
@@ -54,7 +51,7 @@ export default function Hero() {
           </p>
 
           {/* Título Principal (H1): Definido con tamaños responsivos (text-2xl a text-5xl) */}
-          <h1 className="md:mb-2 max-w-xl text-lg lg:text-2xl font-bold leading-tight md:text-4xl lg:text-5xl">
+          <h1 className="md:mb-2 max-w-xl text-lg font-bold leading-tight md:text-4xl lg:text-5xl">
             Servicios de Electricidad y Refrigeración en Córdoba
           </h1>
 
@@ -69,7 +66,7 @@ export default function Hero() {
               crea el efecto de "esquina blanca" que crece al pasar el mouse (group-hover).
           */}
           <a
-            href={whatsappUrl}
+            href={`https://wa.me//5493515930609?text=${process.env.NEXT_PUBLIC_SOLICITAR_PRESUPUESTO_MESSAGE}`}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-block overflow-hidden bg-[#F6B426] px-8 py-2 md:px-12 md:py-4 font-semibold md:font-bold text-[#3A3C40] transition-all"

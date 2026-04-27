@@ -95,7 +95,7 @@ export default function Contacto() {
         {/* Tarjetas de Información Rápida: Horarios, Email y WhatsApp con efectos hover */}
         <div className="flex flex-row justify-center items-center gap-12 mb-16">
           {/* Bloque Horario */}
-          <div className="md:flex md:items-center gap-1 md:gap-4 hidden md:block">
+          <div className="md:flex md:items-center gap-1 md:gap-4 hidden">
             <div className="flex items-center justify-center w-14 h-14 bg-[#111C55] border-2 border-[#273270] rounded-full shrink-0">
               <IconHorario />
             </div>
@@ -111,7 +111,10 @@ export default function Contacto() {
           </a>
 
           {/* Link de WhatsApp */}
-          <a href="https://wa.me/5493515930609" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group transition-transform duration-300 hover:scale-105">
+          <a 
+            href={`https://wa.me//5493515930609?text=${process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE}`} target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-4 group transition-transform duration-300 hover:scale-105"
+          >
             <div className="flex items-center justify-center w-14 h-14 bg-[#111C55] border-2 border-[#273270] rounded-full shrink-0 group-hover:border-[#F6B426] transition-colors">
               <IconPhone />
             </div>
