@@ -196,3 +196,27 @@ export const IconMenu = ({ className }: IconProps) => (
     <path d="M4 18l16 0" />
   </svg>
 );
+
+// 12. IconClose
+export const IconClose = ({ className }: IconProps) => {
+  return (
+
+<svg aria-hidden="true"
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#DBDBDB"
+  stroke-width="1"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  className={className || "icon icon-tabler icons-tabler-outline icon-tabler-x bg-white"}
+>
+  <path d="M12 21a9 9 0 0 0 9 -9a9 9 0 0 0 -9 -9a9 9 0 0 0 -9 9a9 9 0 0 0 9 9z" />
+  <path d="M8.5 8.5l7 7" />
+  <path d="M8.5 15.5l7 -7" />
+</svg>
+
+  )
+}

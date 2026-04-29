@@ -1,10 +1,40 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ContactItems } from "../ui/ContsctItems";
 import { DropDownMenu } from "../ui/DropDownMenu";
 import { LogoRedecoToia, IsotipoRedecoToia, IconWhatsApp } from "../ui/Icons";
 
 export default function Topbar() {
-  
+  // Estado para controlar si el contenido del menú está abierto
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Si el menú no está abierto, no hacemos nada
+    if (!isMenuOpen) return;
+
+    // 1. Cerrar automáticamente tras 5 segundos
+    const timer = setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 5000);
+
+    // 2. Cerrar al detectar scroll (más de 50px)
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpieza de eventos y timers
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMenuOpen]);
+
   return (
     <div className="w-full py-6 bg-[#091242] z-50">
       <div className="mx-auto flex lg:max-w-6xl px-8 items-center justify-between">
@@ -14,11 +44,14 @@ export default function Topbar() {
         <Link href="/" className="transition-transform hover:scale-105 active:scale-95 block lg:hidden">
           <IsotipoRedecoToia />
         </Link>
+        
         <ContactItems />
-        <DropDownMenu />
+
+        {/* Pasamos el estado y la función para que el botón y la X funcionen */}
+        <DropDownMenu isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
       </div>
       
-      {/* WhatsApp Flotante: Usa variables de entorno para el número y posicionamiento fijo (fixed) */}
+      {/* WhatsApp Flotante */}
       <a
         href={`https://wa.me//5493515930609?text=${process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE}`}
         target="_blank"
