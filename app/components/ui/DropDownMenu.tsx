@@ -15,9 +15,6 @@ const LINKS: DropDownMenuProps[] = [
   { id: "electricity", name: "Electricidad", href: "/servicios/electricidad", type: "internal" },
   { id: "refrigeration", name: "Refrigeración", href: "/servicios/refrigeracion", type: "internal" },
   { id: "maintenance", name: "Mantenimiento", href: "/servicios/mantenimiento", type: "internal" },
-  { id: "whatsapp", name: "WhatsApp", href: "https://wa.me/5493515930609", type: "external" },
-  { id: "email", name: "Email", href: "mailto:toiacristiandaniel@gmail.com", type: "external" },
-  { id: "instagram", name: "Instagram", href: "https://www.instagram.com/redeco.toia", type: "external" },
 ];
 
 export function DropDownMenu() {

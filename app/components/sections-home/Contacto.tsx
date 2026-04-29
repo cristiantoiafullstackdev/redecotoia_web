@@ -74,7 +74,7 @@ export default function Contacto() {
   const labelStyles = "absolute left-4 -top-2.5 px-2 bg-[#091242] text-white text-sm tracking-wide";
 
   return (
-    <section id="contacto" className="w-full bg-[#dbdbdb] py-20 px-6 font-rubik flex justify-center">
+    <section id="contacto" className="w-full py-20 px-6 font-rubik flex justify-center">
       <div className="w-246 h-auto min-h-230 bg-[#091242] p-12 md:p-20 flex flex-col justify-center shadow-2xl">
         
         {/* Encabezado de Sección: Título y bajada de texto explicativa */}
@@ -107,7 +107,7 @@ export default function Contacto() {
             <div className="flex items-center justify-center w-14 h-14 bg-[#111C55] border-2 border-[#273270] rounded-full shrink-0 group-hover:border-[#F6B426] transition-colors">
               <IconEmail />
             </div>
-            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors hidden md:block">E-mail: <br /> toiacristiandaniel@gmail.com</p>
+            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors hidden sm:block">E-mail: <br /> toiacristiandaniel@gmail.com</p>
           </a>
 
           {/* Link de WhatsApp */}
@@ -118,7 +118,7 @@ export default function Contacto() {
             <div className="flex items-center justify-center w-14 h-14 bg-[#111C55] border-2 border-[#273270] rounded-full shrink-0 group-hover:border-[#F6B426] transition-colors">
               <IconPhone />
             </div>
-            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors hidden md:block">Celular: <br /> (351) 593 0609</p>
+            <p className="text-white text-xs leading-tight group-hover:text-[#F6B426] transition-colors hidden sm:block">Celular: <br /> (351) 593 0609</p>
           </a>
         </div>
 

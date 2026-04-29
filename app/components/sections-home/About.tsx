@@ -43,13 +43,13 @@ export default function About() {
   const [activeTab, setActiveTab] = useState<TabType>("enfoque");
 
   return (
-    <section id="about" className="w-full bg-[#dbdbdb] py-12 md:py-24 px-6 font-rubik">
+    <section id="about" className="w-full bg-[#dbdbdb] py-12 md:py-12 px-6 font-rubik">
       
       {/* Contenedor principal: Usa flex-col para móvil y flex-row para pantallas grandes (lg) */}
       <div className="mx-auto flex max-w-6xl px-8 pt-8 md:pt-1 flex-col items-stretch justify-between lg:gap-24 lg:flex-row">
         
         {/* BLOQUE DE IMÁGENES: Composición con posición relativa para permitir el solapamiento */}
-        <div className="relative w-full lg:w-1/2 min-h-100">
+        <div className="relative w-full lg:w-1/2 h-50 lg:h-60 xl:h-80 mb-6 md:mb-12 lg">
           
           {/* Imagen Principal: Ocupa el contenedor base con efecto object-cover */}
           <div className="h-full w-full overflow-hidden">
@@ -63,7 +63,7 @@ export default function About() {
           </div>
 
           {/* Imagen Secundaria: Flotante con posicionamiento absoluto y borde grueso que simula recorte */}
-          <div className="absolute bottom-28 -right-8 md:-bottom-12 md:-right-12 overflow-hidden border-12 md:border-18 border-[#dbdbdb] md:w-48">
+          <div className="absolute -bottom-4 sm:-bottom-6 md:-bottom-12 -right-4 md:-right-12 overflow-hidden border-12 md:border-18 border-[#dbdbdb] w-24 sm:w-36 md:w-48">
             <Image
               src="/images/photo-about2.png"
               alt="Técnico trabajando"

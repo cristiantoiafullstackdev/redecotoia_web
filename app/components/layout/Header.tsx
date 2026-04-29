@@ -57,7 +57,7 @@ export default function Header() {
      ESTE BLOQUE: Estructura visual del componente.
   */
   return (
-    <header className="hidden md:block fixed w-full h-14 top-26 z-40 bg-[rgba(9,18,66,0.5)] backdrop-blur-md">
+    <header className="hidden md:block fixed w-full h-14 top-22 lg:top-26 z-40 bg-[rgba(9,18,66,0.5)] backdrop-blur-md">
       <div className="lg:max-w-6xl h-full mx-auto flex items-center justify-between">
         
         {/* Navegación Principal: Mapeo de los enlaces definidos arriba */}

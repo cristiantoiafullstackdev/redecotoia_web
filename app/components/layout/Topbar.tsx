@@ -23,10 +23,10 @@ export default function Topbar() {
         href={`https://wa.me//5493515930609?text=${process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed lg:mt-100 2xl:mt-150 lg:right-12 2xl:right-20 z-50 transition-transform hover:scale-110 active:scale-95 drop-shadow-md hidden lg:block"
+        className="fixed mt-76 right-4 lg:mt-100 2xl:mt-150 lg:right-12 2xl:right-20 z-50 transition-transform hover:scale-110 active:scale-95 drop-shadow-md"
         aria-label="WhatsApp Flotante"
       >
-        <IconWhatsApp className="lg:h-18 lg:w-18 2xl:h-24 2xl:w-24" />
+        <IconWhatsApp className="h-8 w-8 lg:h-18 lg:w-18 2xl:h-24 2xl:w-24" />
       </a>
     </div>
   );
