@@ -55,7 +55,7 @@ export default function Hero() {
           </h1>
 
           {/* Descripción: Texto secundario con opacidad para no competir visualmente con el título */}
-          <p className="mb-4 max-w-140 text-sm md:text-sm lg:text-md leading-relaxed text-gray-100 opacity-90">
+          <p className="mb-8 max-w-140 text-sm md:text-sm lg:text-md leading-relaxed text-gray-100 opacity-90">
             ¿Necesitas mantenimiento preventivo o reparaciones? Garantizamos el confort de tu hogar y empresa.
           </p>
 
