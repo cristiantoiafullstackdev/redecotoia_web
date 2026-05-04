@@ -43,19 +43,19 @@ export default function Hero() {
         <div className="text-white">
           
           {/* Etiqueta superior: Texto pequeño decorativo con borde lateral dorado */}
-          <p className="mb-1 text-xs md:text-sm lg:text-md">
+          <p className="mb-2 text-xs md:text-sm lg:text-md">
             <span className="bg-[#3A3C40]/70 border-l-3 border-[#F6B426] px-4 py-1 font-normal tracking-wide">
               Técnicos matriculados y habilitados (ERSEP).
             </span>
           </p>
 
           {/* Título Principal (H1): Definido con tamaños responsivos (text-2xl a text-5xl) */}
-          <h1 className="mb-1 max-w-140 text-xl md:text-2xl lg:text-4xl font-bold leading-tight">
+          <h1 className="mb-2 max-w-140 text-xl md:text-2xl lg:text-4xl font-bold leading-tight">
             Servicios de Electricidad y Refrigeración en Córdoba
           </h1>
 
           {/* Descripción: Texto secundario con opacidad para no competir visualmente con el título */}
-          <p className="mb-2 max-w-140 text-xs md:text-sm lg:text-md leading-relaxed text-gray-100 opacity-90">
+          <p className="mb-4 max-w-140 text-xs md:text-sm lg:text-md leading-relaxed text-gray-100 opacity-90">
             ¿Necesitas mantenimiento preventivo o reparaciones? Garantizamos el confort de tu hogar y empresa.
           </p>
 
@@ -68,7 +68,7 @@ export default function Hero() {
             href={`https://wa.me//5493515930609?text=${process.env.NEXT_PUBLIC_SOLICITAR_PRESUPUESTO_MESSAGE}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative inline-block overflow-hidden bg-[#F6B426] px-8 py-2 md:px-12 md:py-4 font-semibold md:font-bold text-[#3A3C40] transition-all"
+            className="group relative inline-block overflow-hidden bg-[#F6B426] px-8 py-3 md:px-12 md:py-4 font-semibold md:font-bold text-[#3A3C40] transition-all"
           >
             <span className="relative my-auto z-10">Solicitar presupuesto</span>
             
