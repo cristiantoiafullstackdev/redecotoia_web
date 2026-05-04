@@ -88,7 +88,7 @@ export default function Contacto() {
             Solicita tu Presupuesto hoy mismo
           </h2>
           <p className="mx-auto max-w-2xl text-sm leading-relaxed text-white/80">
-            Nuestro equipo técnico se pondrá en contacto con vos a la brevedad...
+            Nuestro equipo técnico se pondrá en contacto con vos a la brevedad.
           </p>
         </div>
 

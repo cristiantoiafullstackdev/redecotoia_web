@@ -62,7 +62,7 @@ export function DropDownMenu({ isOpen, setIsOpen }: DropDownMenuProps) {
                 <IconClose className="h-6 w-6 text-[#091242]" />
               </button>
             </div>
-
+            
             {/* Links principales */}
             <div className="flex flex-col divide-y divide-[#F6B426]">
               {NAV_LINKS.map((link) => (

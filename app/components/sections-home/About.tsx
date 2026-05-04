@@ -15,11 +15,11 @@ import { useState } from "react";
 const TABS_CONTENT = {
   enfoque: {
     title: "Nuestro enfoque",
-    text: "En RedecoToia, nos especializamos en transformar espacios a través de un mantenimiento integral de excelencia...",
+    text: "En RedecoToia, nos especializamos en transformar espacios a través de un mantenimiento integral de excelencia.",
   },
   mision: {
     title: "Misión",
-    text: "Nuestra misión es proporcionar soluciones integrales en climatización y electricidad que garanticen la seguridad...",
+    text: "Nuestra misión es proporcionar soluciones integrales en climatización y electricidad que garanticen la seguridad.",
   },
   valores: {
     title: "Valores",
@@ -88,7 +88,7 @@ export default function About() {
               Nuestra trayectoria en <br /> confort y Energía
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-[#1C1F35]">
-              Implementamos soluciones técnicas de alta precisión para garantizar que cada sistema eléctrico y de climatización funcione al máximo rendimiento...
+              Implementamos soluciones técnicas de alta precisión para garantizar que cada sistema eléctrico y de climatización funcione al máximo rendimiento.
             </p>
           </div>
 
