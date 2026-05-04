@@ -29,12 +29,12 @@ export default async function MantenimientoPage() {
 
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-2 mb-10">
       {/* LAYOUT PRINCIPAL: 
           'mt-48' asegura que el contenido baje lo suficiente para no quedar 
           oculto tras un header fijo (si lo hubiera).
       */}
-      <div className="mt-48 max-w-286 min-h-screen mx-auto">
+      <div className="mt-48 max-w-72 md:max-w-286 min-h-screen mx-auto">
         
         {/* ENCABEZADO DE SECCIÓN:
             Usa el mismo estilo visual (border-l-4 y bg) que vimos en los componentes 
@@ -60,7 +60,7 @@ export default async function MantenimientoPage() {
             */
             <div 
               key={service.id}
-              className="min-w-60 min-h-80 p-8 border-t border-l border-[#DBDBDB] flex flex-col"
+              className="min-w-60 min-h-80 p-8 border-t border-l border-[#3A3C40] flex flex-col"
             >
               <h2 className="text-2xl min-h-26 font-normal mb-2 text-[#1C1F35]">
                 {service.title}
@@ -90,9 +90,9 @@ export default async function MantenimientoPage() {
         </div>
         <p className="mt-12 text-sm text-[#1C1F35]">
           <span className="font-bold">
-            ¿Tienes dudas sobre qué tipo de instalación eléctrica necesita tu propiedad en Córdoba?<br/> 
-          </span>
-            En Redeco Toia realizamos un asesoramiento técnico previo para asegurar que cada boca o acometida cumpla con las normas de seguridad. Haz clic en el botón de WhatsApp para un diagnóstico rápido.
+            ¿Tus instalaciones eléctricas o de climatización requieren mejoras o normalización en Córdoba?<br/> 
+          </span>            
+          En Redeco Toia ofrecemos servicios de mantenimiento contratados que garantizan seguridad, rendimiento y continuidad en el tiempo. Nos ocupamos de mantener y optimizar tus sistemas para que funcionen siempre al máximo. Haz clic en el botón de WhatsApp y comienza a mejorar tus instalaciones hoy.
         </p>
       </div>
     </div>

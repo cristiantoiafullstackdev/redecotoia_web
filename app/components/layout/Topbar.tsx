@@ -59,7 +59,7 @@ export default function Topbar() {
         className="fixed mt-76 right-4 lg:mt-100 2xl:mt-150 lg:right-12 2xl:right-20 z-50 transition-transform hover:scale-110 active:scale-95 drop-shadow-md"
         aria-label="WhatsApp Flotante"
       >
-        <IconWhatsApp className="h-8 w-8 lg:h-18 lg:w-18 2xl:h-24 2xl:w-24" />
+        <IconWhatsApp className="h-12 w-12 lg:h-18 lg:w-18 2xl:h-24 2xl:w-24" />
       </a>
     </div>
   );

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#091242] text-white py-12">
       {/* El container mx-auto asegura que el margen sea igual al de tu Topbar */}
-      <div className="container max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div className="container max-w-6xl mx-auto px-4 flex flex-col md:flex-row text-center md:justify-between items-center gap-4">
         
         {/* Copyright a la izquierda */}
         <p className="text-sm opacity-80">

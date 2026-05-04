@@ -29,12 +29,12 @@ export default async function ElectricidadPage() {
 
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-2 mb-10">
       {/* LAYOUT PRINCIPAL: 
           'mt-48' asegura que el contenido baje lo suficiente para no quedar 
-          oculto tras un header fijo (si lo hubiera).
+          oculto tras un header fijo.
       */}
-      <div className="mt-48 max-w-286 min-h-screen mx-auto">
+      <div className="mt-48 max-w-72 md:max-w-286 min-h-screen mx-auto">
         
         {/* ENCABEZADO DE SECCIÓN:
             Usa el mismo estilo visual (border-l-4 y bg) que vimos en los componentes 
@@ -60,7 +60,7 @@ export default async function ElectricidadPage() {
             */
             <div 
               key={service.id}
-              className="min-w-60 min-h-80 p-8 border-t border-l border-[#DBDBDB] flex flex-col"
+              className="min-w-60 min-h-80 p-8 border-t border-l border-[#3A3C40] flex flex-col"
             >
               <h2 className="text-2xl min-h-26 font-normal mb-2 text-[#1C1F35]">
                 {service.title}
@@ -90,9 +90,9 @@ export default async function ElectricidadPage() {
         </div>
         <p className="mt-12 text-sm text-[#1C1F35]">
           <span className="font-bold">
-            ¿Tienes dudas sobre qué tipo de instalación eléctrica necesita tu propiedad en Córdoba?<br/> 
+            ¿Tu instalación eléctrica necesita ser normalizada, mejorada y/o mantenida en Córdoba?<br/> 
           </span>
-            En Redeco Toia realizamos un asesoramiento técnico previo para asegurar que cada boca o acometida cumpla con las normas de seguridad. Haz clic en el botón de WhatsApp para un diagnóstico rápido.
+          En Redeco Toia realizamos trabajos de adecuación y optimización para que cada boca, acometida y puesta a tierra cumpla con las normas AEA y ERSEP, asegurando funcionalidad y confort. Haz clic en el botón de WhatsApp y comienza a poner tus instalaciones en regla para tu seguridad.
         </p>
       </div>
     </div>
