@@ -38,6 +38,9 @@ export const metadata: Metadata = {
   verification: {
     google: ""
   },
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 
