@@ -35,6 +35,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://redeco-toia.vercel.app",
   },
+  verification: {
+    google: "google73c914ba373489a0.html"
+  },
 };
 
 
