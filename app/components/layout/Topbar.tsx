@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ContactItems } from "../ui/ContsctItems";
+import { ContactItems } from "../ui/ContactItems";
 import { DropDownMenu } from "../ui/DropDownMenu";
 import { LogoRedecoToia, IsotipoRedecoToia, IconWhatsApp } from "../ui/Icons";
 

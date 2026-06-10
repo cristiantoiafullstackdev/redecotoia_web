@@ -28,9 +28,8 @@ async function main() {
 
   /* 1. CARGAR CATEGORÍAS (Upsert)
      - SINTAXIS: upsert ({ where, update, create })
-     - ESTE BLOQUE: Es muy inteligente. Si la categoría con ese ID ya existe, solo la 
-       actualiza (update). Si no existe, la crea (create). Esto evita errores de 
-       "duplicados" si ejecutas el seed varias veces.
+     - ESTE BLOQUE: Si la categoría con ese ID ya existe, solo la 
+       actualiza (update). Si no existe, la crea (create).
   */
   for (const cat of categories) {
     await prisma.category.upsert({
@@ -41,27 +40,19 @@ async function main() {
   }
   console.log("✅ Categorías cargadas.");
 
-  /* 2. CARGAR SERVICIOS (Create)
-     - ESTE BLOQUE: Recorre tu JSON de servicios y los inserta en la tabla 'Service'.
-     - Lógica de respaldo: Si en el JSON falta 'minUnits' o 'currency', el código 
-       usa valores por defecto (1 y "ARS") para evitar que la DB falle.
+  /* 2. LIMPIEZA TOTAL DE SERVICIOS
+     Esto elimina el problema de duplicados antes de insertar los nuevos servicios.
   */
- // 2. LIMPIEZA TOTAL DE SERVICIOS
-  // Esto elimina el problema de duplicados y errores de búsqueda
   await prisma.service.deleteMany({});
   console.log("🗑️ Tabla de servicios limpia.");
-for (const svc of services) {
-    await prisma.service.upsert({
-      where: { title: svc.title },
-      update: {
-        description: svc.description,
-        price: svc.price,
-        imagePath: svc.imagePath,
-        minUnits: svc.minUnits || 1,
-        currency: svc.currency || "ARS",
-        categoryId: svc.categoryId,
-      },
-      create: {
+
+  /* 3. CARGAR SERVICIOS (Create)
+     - ESTE BLOQUE: Al estar la tabla limpia, inserta directamente cada servicio 
+       usando 'create' evitando el error de restricciones únicas de PostgreSQL.
+  */
+  for (const svc of services) {
+    await prisma.service.create({
+      data: {
         title: svc.title,
         description: svc.description,
         imagePath: svc.imagePath,
@@ -72,13 +63,12 @@ for (const svc of services) {
       },
     });
   }
-  console.log("✅ Base de datos actualizada.");
+  console.log("✅ Base de datos actualizada con todos los servicios.");
 }
 
 /* GESTIÓN DEL PROCESO
-   - catch: Si algo falla (ej: un campo mal escrito en el JSON), te avisa por consola.
-   - finally: Muy importante. Desconecta Prisma de la base de datos para no dejar 
-     conexiones colgadas innecesariamente.
+   - catch: Si algo falla, te avisa por consola.
+   - finally: Desconecta Prisma de la base de datos para no dejar conexiones colgadas.
 */
 main()
   .catch((e) => {
