@@ -4,6 +4,24 @@
    directamente en el cuerpo del componente.
 */
 import prisma from "@/lib/prisma";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Instalación y Mantenimiento de Aires Acondicionados | Redeco Toia",
+  description: "Instalación profesional y mantenimiento de equipos de refrigeración en Córdoba.",
+  keywords: ["aires acondicionados Córdoba", "instalación split", "mantenimiento refrigeración"],
+  alternates: {
+    canonical: "https://redecotoia.vercel.app/servicios/refrigeracion",
+  },
+  openGraph: {
+    title: "Refrigeración - Redeco Toia",
+    description: "Instalación y mantenimiento de aires acondicionados.",
+    url: "https://redecotoia.vercel.app/servicios/refrigeracion",
+    images: ["/og-refrigeracion.jpg"],
+  },
+};
+
+
 
 export default async function RefrigeracionPage() {
   /* LÓGICA DE DATOS: Prisma Query

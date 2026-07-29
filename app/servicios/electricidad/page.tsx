@@ -4,6 +4,23 @@
    directamente en el cuerpo del componente.
 */
 import prisma from "@/lib/prisma";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Instalaciones Eléctricas en Córdoba | Redeco Toia",
+  description: "Montaje de cableado, tableros y protecciones normalizadas para hogares y comercios en Córdoba.",
+  keywords: ["electricista Córdoba", "instalaciones eléctricas", "tableros eléctricos"],
+  alternates: {
+    canonical: "https://redecotoia.vercel.app/servicios/electricidad",
+  },
+  openGraph: {
+    title: "Instalaciones Eléctricas - Redeco Toia",
+    description: "Servicios eléctricos normalizados en Córdoba.",
+    url: "https://redecotoia.vercel.app/servicios/electricidad",
+    images: ["/og-electricidad.jpg"],
+  },
+};
+
 
 export default async function ElectricidadPage() {
   /* LÓGICA DE DATOS: Prisma Query

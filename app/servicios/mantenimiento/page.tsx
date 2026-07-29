@@ -4,6 +4,23 @@
    directamente en el cuerpo del componente.
 */
 import prisma from "@/lib/prisma";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mantenimiento Eléctrico Preventivo | Redeco Toia",
+  description: "Revisión de tableros y cableados para evitar cortocircuitos y optimizar el consumo energético.",
+  keywords: ["mantenimiento eléctrico Córdoba", "prevención cortocircuitos", "ahorro energía"],
+  alternates: {
+    canonical: "https://redecotoia.vercel.app/servicios/mantenimiento",
+  },
+  openGraph: {
+    title: "Mantenimiento Eléctrico - Redeco Toia",
+    description: "Servicios de mantenimiento eléctrico en Córdoba.",
+    url: "https://redecotoia.vercel.app/servicios/mantenimiento",
+    images: ["/og-mantenimiento.jpg"],
+  },
+};
+
 
 export default async function MantenimientoPage() {
   /* LÓGICA DE DATOS: Prisma Query
