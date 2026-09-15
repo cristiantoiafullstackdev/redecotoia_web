@@ -22,18 +22,18 @@ const font = Rubik({
    - 'canonical': Le dice a Google cuál es la URL principal, evitando problemas de contenido duplicado.
 */
 export const metadata: Metadata = {
-  metadataBase: new URL("http://redecotoia.vercel.app"),
+  metadataBase: new URL("https://redecotoia.vercel.app"),
   title: "Redeco Toia | Servicios eléctricos en Córdoba",
   description: "Servicios eléctricos normalizados para hogares y empresas en Córdoba.",
   keywords: ["electricista Córdoba", "instalaciones eléctricas", "servicios urgencia", "Redeco Toia"],
   openGraph: {
     title: "Redeco Toia - Servicios eléctricos",
     description: "Catálogo de servicios eléctricos normalizados en Córdoba.",
-    url: "https://redeco-toia.vercel.app",
+    url: "https://redecotoia.vercel.app",
     images: ["/og-image.jpg"], // poné una imagen en /public
   },
   alternates: {
-    canonical: "https://redeco-toia.vercel.app",
+    canonical: "https://redecotoia.vercel.app",
   },
   verification: {
     google: ""
