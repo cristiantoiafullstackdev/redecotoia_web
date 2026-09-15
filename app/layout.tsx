@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Redeco Toia - Servicios eléctricos",
     description: "Catálogo de servicios eléctricos normalizados en Córdoba.",
     url: "https://redecotoia.vercel.app",
-    images: ["/og-image.jpg"], // poné una imagen en /public
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "https://redecotoia.vercel.app",
