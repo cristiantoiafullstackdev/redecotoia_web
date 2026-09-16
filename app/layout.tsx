@@ -22,7 +22,7 @@ const font = Rubik({
    - 'canonical': Le dice a Google cuál es la URL principal, evitando problemas de contenido duplicado.
 */
 export const metadata: Metadata = {
-  metadataBase: new URL("https://redecotoia.vercel.app"),
+  metadataBase: new URL ("https://redecotoia.vercel.app"),
   title: "Redeco Toia | Servicios eléctricos en Córdoba",
   description: "Servicios eléctricos normalizados para hogares y empresas en Córdoba.",
   keywords: ["electricista Córdoba", "instalaciones eléctricas", "servicios urgencia", "Redeco Toia"],
